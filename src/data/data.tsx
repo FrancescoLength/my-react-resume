@@ -8,23 +8,12 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,8 +33,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Francesco Schino',
+  description: "Francesco Schino's react resume website",
 };
 
 /**
@@ -69,18 +58,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Francesco Schino`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        <strong className="text-stone-100">Quality Manager | Project Manager | Software Engineer</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      I specialize in process optimization, strategic planning, and aligning technical solutions with business objectives
       </p>
     </>
   ),
@@ -104,16 +89,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a Quality Manager with a background in Software Engineering and Project Management. Skilled in Python and JavaScript, I thrive on problem-solving and innovation. Passionate about technology, I continuously explore new trends and advancements. Outside of work, I enjoy building FPV drones, riding my motorbike, and discovering new countries and cultures.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
+    {label: 'Age', text: '36', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Italian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Tecnologys, Motorcycles, Traveling', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Bari', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,73 +105,72 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
+    name: 'Hard Skills',
+    skills: [
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'Javascript',
+        level: 7,
+      },
+      {
+        name: 'Bash Scripting',
+        level: 6,
+      },
+      {
+        name: 'Java',
+        level: 6,
+      },
+      {
+        name: 'C#',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Soft Skills',
+    skills: [
+      {
+        name: 'Creative Problem-Solving',
+        level: 9,
+      },
+      {
+        name: 'Strategic Vision',
+        level: 8,
+      },
+      {
+        name: 'Team Structuring & Leadership',
+        level: 8,
+      },
+      {
+        name: 'Client Management',
+        level: 9,
+      },
+      {
+        name: 'Functional-to-Technical Requirement Mapping',
+        level: 9,
+      },
+    ],
+  },
+  {
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Italian',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'English',
+        level: 9,
       },
       {
         name: 'Spanish',
         level: 3,
       },
     ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+  }
 ];
 
 /**
@@ -196,70 +178,34 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Gym Automatic Booking System',
+    description: 'GymAutomaticBookingSystem aka GABS is an automatic gym class booking system, developed in Python using Selenium to automate the interaction with the booking website of a popular gym in Bristol. ',
+    url: 'https://github.com/FrancescoLength/GABS',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: '99bars',
+    description: 'A very first React Native app - Simple puzzle game.  Essentially, the game involves a 3x3 matrix with elements that can toggle between bars, rounds, and crosses. Upon starting the game, bars are initially displayed. When you tap on the bars, they transform into rounds. However, if you fail to touch the bars in time, they evolve into crosses, marking the end of the game. The objective of the game is to tap all the bars before they transition into crosses. It\'s a timing-based challenge where success hinges on speed and agility. To emerge victorious, players must swiftly touch each bar presented before it transforms crosses.',
+    url: 'https://github.com/FrancescoLength/99bars',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'PacMan Sensor Game',
+    description: 'An article was published about a prototype I developed — an emotion extrapolator that analyzes heart rate and skin conductance to identify emotions experienced while playing Pac-Man. The prototype was created using Arduino and Matlab, with the data collected from the sensors processed and analyzed to determine the player’s emotional state. The project was a success, with the results published in an article on Startup Italia.',
+    url: 'https://startupitalia.eu/uncategorized/uno-studente-di-bari-ha-mappato-le-emozioni-umane-giocando-a-pacman/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'DIY Lego Tablet',
+    description: 'An article featuring my self-built tablet prototype, developed in collaboration with La Scuola Open Source. The device is based on a Linux-embedded board and includes a touchscreen, battery, and Arduino-compatible connections for rapid prototyping.',
+    url: 'https://www.domusweb.it/it/design/2015/11/16/sos_una_scuola_che_si_occupa_di_futuro_.html',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Emotional recognition system through physiological signal processing',
+    description: 'An article by La Repubblica covering my thesis project: a sensor system that analyzes physiological signals, such as heart rate and skin conductance, to assess user satisfaction and emotional response. The technology was designed to evaluate the efficiency of public administration services.',
+    url: 'https://www.repubblica.it/tecnologia/2015/05/28/news/soddisfatto_o_arrabiato_il_sensore_per_valutare_l_efficienza_della_pa-115463006/',
     image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -268,40 +214,99 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2008 – 2015',
+    location: 'Bari, Italy',
+    title: 'BSc Computer Science @ University of Bari',
+    content: <p>Algorithms and data structures, Databases, Software Engineering, Computer Networks, Programming Languages, Human-Computer Interaction, Web services.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2002 – 2007',
+    location: 'Bari, Italy',
+    title: 'Diploma in Commercial Technical @ ITC Marco Polo',
+    content: <p>Computer use and operation, business management procedures, office automation, adoption of appropriate communication techniques.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'August 2023 – Present',
+    location: 'Remote',
+    title: 'Quality Manager @ Coding Giants',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <ul>
+          <li>- Establishing the Italian branch of Coding Giants, working directly with the founders and Italian Country Manager.</li>
+          <li>- Led the creation and development of a team of 70 teachers, overseeing all phases of recruitment, onboarding, and management</li>
+          <li>- Tracking progress and task allocation with agile methodologies (SCRUM)</li>
+          <li>- Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
+          <li>- Risks mitigation to ensure smooth operations.</li>
+          <li><b>Tools and Platforms Used:</b> Trello, MS Excell, Traffit, Teamtailor</li>
+        </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2018 – April 2023',
+    location: 'Bristol, UK',
+    title: 'Software Engineer @ Eurofins Digital Testing',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <ul>
+          <li>- Created test plans, test cases, and test material (automatic and manual) for the digital broadcasting industry.</li>
+          <li>- Conducted script validation, verification, and integration, with experience in code debugging.</li>
+          <li>- Supported project management and led a team of 8 engineers, managing audit requests and overseeing the “4k logo” project.</li>
+          <li>- Developed features in C# for a media file analyzer app and improved infrastructure with Shell and batch scripting.</li>
+          <li>- Worked with Windows and Linux servers, using DevOps tools for configuration and maintenance.</li>
+          <li>- Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li>
+          <li><b>Tools and Platforms Used:</b> Javascript, Python, C#, Pandas, ElementTree, Unittest, Selenium, YAML, GWT, Regex, XML, JSON, Jira, Jenkins, VSCode, SVN, Git, Postman, SoapUI, FFmpeg, MediaInfo, Video Encoding, DRM (PlayReady, Marlin, ClearKey, Widevine), Redmine.</li>
+        </ul>
+    ),
+  },
+  {
+    date: 'November 2016 – July 2017',
+    location: 'Rome, Italy',
+    title: 'Cyber Security Analyst @ Deloitte',
+    content: (
+        <ul>
+          <li>- Technical and functional analyst in Risk Advisory at Leonardo (client), focusing on GRC platform transformation and Cyber Security.</li>
+          <li>- Contributed to the SOC with system integration (via API REST) and system implementation.</li>
+          <li>- Translated functional requirements into technical specifications for smooth project execution.</li>
+          <li>- Created release manuals, trained clients, and managed work progress under tight
+          deadlines.</li>
+          <li><b>Tools and Platforms Used:</b> RSA Archer, Javascript, jQuery, XSLT, CSS, XML, HTML, MS Excel, MS PowerPoint.</li>
+        </ul>
+    ),
+  },
+  {
+    date: 'October 2015 – November 2016',
+    location: 'Rome, Italy',
+    title: 'Software Developer @ Capgemini',
+    content: (
+        <ul>
+          <li>- Utilized Software AG products to develop IoT and Big Data solutions for Octo Telematics (client)</li>
+          <li>- Analyzed and managed applications for international telephone traffic interconnection and developing components for SMS routing and configuration for Telecom Italia Sparkle (client)</li>
+          <li><b>Tools and Platforms Used:</b> Java, SOAP, REST, SQL, Oracle, Maven, Tomcat, Hibernate, CSS, HTML, IoT, Linux, SVN, EPL, Mongo, Virtualization.</li>
+        </ul>
+    ),
+  },
+  {
+    date: 'July 2015 – October 2015',
+    location: 'Bari, Italy / Remote',
+    title: 'Project Leader @ La Scuola Open Source',
+    content: (
+        <ul>
+          <li>- Developed a custom tablet using selected electronic components, assembled and configured as an updated version of the 2014 prototype. .</li>
+          <li>- The main feature includes the installation of Ubuntu OS with integrated development environments (IDEs) for Java and Python.</li>
+          <li><b>Tools and Platforms Used:</b> Arduino, Raspberry Pi, IoT.</li>
+        </ul>
+    ),
+  },
+  {
+    date: 'April 2015 – Jul 2015',
+    location: 'Valenzano (Bari), Italy',
+    title: 'Graduating student @ LaserInn',
+    content: (
+        <ul>
+          <li>- Thesis: development of a prototype for the acquisition of physiological signals and of an act software able to extract and recognize the human emotions.</li>
+          <li><b>Tools and Platforms Used:</b> Arduino, C, MATLAB, LaTeX, R, E-Health.</li>
+        </ul>
     ),
   },
 ];
@@ -313,19 +318,28 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Project Manager, Eurofins Digital Testing',
+      text: 'Francesco\'s support has always been incredible helpful to me, and his recent support of PM for myself/test case team has massively helped my Jira Ticket accuracy and discipline.'
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Practice Lead, Eurofins Digital Testing',
+      text: 'Francesco has done a great job on the Olive project, and with onboarding the IMF and MXF Analyser products - taking on new challenges and technologies, proactive and taking ownership, and professional when dealing with customers. I look forward to working with him more as we start new development on the products.'
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Senior Software Architect, Eurofins Digital Testing',
+      text: 'All the trainings you have given to me has been very helpful. You have given a great start to our training. During the initial Ligada setup, we have encountered few problem, and you have resolved almost all the issue. I have taken notice of your problem solving skills. Your approach for solving problem is very systematic, calm and focused. I really like your thinking process for tackling problems.'
+    },
+    {
+      name: 'Graduate Software Engineer, Eurofins Digital Testing',
+      text: 'You\'ve always been constructive and encouraging. Learning the ropes whilst working with you has been great and you\'re one of the reasons I\'ve come to really like working here. Even when I\'ve made mistakes you\'ve always been supportive. Great team mate and a cool head under pressure.'
+    },
+    {
+      name: 'Cyber Security Analyst, Deloitte',
+      text: 'I had the opportunity to work with Francesco for several months. He is a hard worker and an excellent team mate. He has strong technical skills and he is always willing to support the team in any moment (even under pressure or with strict deadlines approaching). He is not only a brilliant professional but also (and most important) a kind and honest person. I really enjoyed working with him and I somehow hope to meet him again in the future.'
+    },
+    {
+      name: 'Software Engineer, LaserInn',
+      text: 'Francesco worked on his thesis in close collaboration with me and my colleagues. At that time, I was able to appreciate his autonomy and his resourcefulness. He demonstrated excellent organizational skills. He has also shown that he is able to integrate himself into a context of professionals. In the last period of his work, Francesco actively proposed himself in the development team of the project to which we worked together. I keep a good memory of those months and it would be a pleasure for me if we could work together again.'
     },
   ],
 };
@@ -336,27 +350,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'I am always open to new opportunities and collaborations. Feel free to reach out to me for any inquiries or just to say hello.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'france.schino@live.it',
+      href: 'mailto:france.schino@live.it',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Bristol, United Kingdom',
+      href: 'https://www.google.ca/maps/place/Bristol/@51.4685873,-2.755525,11z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'francescosschino',
+      href: 'https://www.linkedin.com/in/francescosschino/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'FrancescoLength',
+      href: 'https://github.com/FrancescoLength',
     },
   ],
 };
@@ -365,9 +379,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+
 ];
