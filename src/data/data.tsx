@@ -9,12 +9,12 @@ import {
 } from '@heroicons/react/24/outline';
 
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import profilepic from '../images/profilepic.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.webp';
+import porfolioImage2 from '../images/portfolio/portfolio-2.webp';
+import porfolioImage3 from '../images/portfolio/portfolio-3.webp';
+import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
+import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
+import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
