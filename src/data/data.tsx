@@ -14,6 +14,7 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.webp';
 import porfolioImage3 from '../images/portfolio/portfolio-3.webp';
 import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
 import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
+import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -94,7 +95,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '36', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Tecnologys, Motorcycles, Traveling', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Bari', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
   ],
@@ -109,7 +110,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Python',
-        level: 9,
+        level: 8,
       },
       {
         name: 'Javascript',
@@ -206,6 +207,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'An article by La Repubblica covering my thesis project: a sensor system that analyzes physiological signals, such as heart rate and skin conductance, to assess user satisfaction and emotional response. The technology was designed to evaluate the efficiency of public administration services.',
     url: 'https://www.repubblica.it/tecnologia/2015/05/28/news/soddisfatto_o_arrabiato_il_sensore_per_valutare_l_efficienza_della_pa-115463006/',
     image: porfolioImage5,
+  },
+  {
+    title: 'My high-performance freestyle and racing FPV build',
+    description: 'Designed for durability, agility, and top-tier flight performance.\n Frame: ImpulseRC Apex,\n  Flight Controller: SpeedyBee F7 V2,\n  ESC: SkyStars Kramam KM50A 3-6S BLHeli_S 4-in-1 ESC,\n  Motors: iFlight Xing2 2306 1755KV,\n  Receiver: TBS Crossfire,\n  VTX: DJI O3 Air Unit,\n  FPV Goggles: DJI Goggles,\n  RC Controller: TBS Tango 2 Pro',
+    url: '',
+    image: porfolioImage6,
   },
 ];
 
