@@ -15,6 +15,7 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.webp';
 import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
 import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
 import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
+import porfolioImage7 from '../images/portfolio/portfolio-7.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -211,8 +212,14 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'My high-performance freestyle and racing FPV build',
     description: 'Designed for durability, agility, and top-tier flight performance.\n Frame: ImpulseRC Apex,\n  Flight Controller: SpeedyBee F7 V2,\n  ESC: SkyStars Kramam KM50A 3-6S BLHeli_S 4-in-1 ESC,\n  Motors: iFlight Xing2 2306 1755KV,\n  Receiver: TBS Crossfire,\n  VTX: DJI O3 Air Unit,\n  FPV Goggles: DJI Goggles,\n  RC Controller: TBS Tango 2 Pro',
-    url: '',
+    url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportfolio-6.98f278cf.webp&w=1920&q=75',
     image: porfolioImage6,
+  },
+  {
+    title: 'My personal website',
+    description: 'Built with React.js, Typescript, Next.js, and styled with Tailwind css and Heroicons. The website is hosted on Vercel and the source code is available on GitHub. This is a fork of the React Resume Template created by tbakerx.',
+    url: 'https://github.com/FrancescoLength/my-react-resume',
+    image: porfolioImage7,
   },
 ];
 
