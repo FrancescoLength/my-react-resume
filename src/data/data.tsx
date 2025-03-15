@@ -95,7 +95,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '36', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Italian', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
     {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Bari', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
@@ -193,7 +193,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'PacMan Sensor Game',
-    description: 'An article was published about a prototype I developed — an emotion extrapolator that analyzes heart rate and skin conductance to identify emotions experienced while playing Pac-Man. The prototype was created using Arduino and Matlab, with the data collected from the sensors processed and analyzed to determine the player’s emotional state. The project was a success, with the results published in an article on Startup Italia.',
+    description: 'An article was published about a prototype I developed an emotion extrapolator that analyzes heart rate and skin conductance to identify emotions experienced while playing Pac-Man. The prototype was created using Arduino and Matlab, with the data collected from the sensors processed and analyzed to determine the player’s emotional state. The project was a success, with the results published in an article on Startup Italia.',
     url: 'https://startupitalia.eu/uncategorized/uno-studente-di-bari-ha-mappato-le-emozioni-umane-giocando-a-pacman/',
     image: porfolioImage3,
   },
@@ -249,11 +249,14 @@ export const experience: TimelineItem[] = [
     content: (
         <ul>
           <li>- Establishing the Italian branch of Coding Giants, working directly with the founders and Italian Country Manager.</li>
-          <li>- Led the creation and development of a team of 70 teachers, overseeing all phases of recruitment, onboarding, and management</li>
+          <li>- Developing and implementing the quality management system, including the creation of a quality manual, procedures, and work instructions.</li>
+          <li>- Risks mitigation to ensure smooth operations.</li>
+          <li>- Ensuring compliance with all legal requirements and regulations.</li>
+          <li>- Created and managed the recruitment process, including job postings, interviews, and onboarding.</li>
+          <li>- Led the creation and development of a team of 70 team members, overseeing all phases of recruitment, onboarding, and management</li>
           <li>- Tracking progress and task allocation with agile methodologies (SCRUM)</li>
           <li>- Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
-          <li>- Risks mitigation to ensure smooth operations.</li>
-          <li><b>Tools and Platforms Used:</b> Trello, MS Excell, Traffit, Teamtailor</li>
+          <li><b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python</li>
         </ul>
     ),
   },
@@ -263,12 +266,14 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer @ Eurofins Digital Testing',
     content: (
         <ul>
-          <li>- Created test plans, test cases, and test material (automatic and manual) for the digital broadcasting industry.</li>
-          <li>- Conducted script validation, verification, and integration, with experience in code debugging.</li>
-          <li>- Supported project management and led a team of 8 engineers, managing audit requests and overseeing the “4k logo” project.</li>
-          <li>- Developed features in C# for a media file analyzer app and improved infrastructure with Shell and batch scripting.</li>
+          <li>- Designed and implemented test plans, automated and manual test cases, and test materials, including DASH-format media, for the broadband and broadcasting industry (HbbTv), serving clients such as BBC and Tivùsat.</li>
+          <li>- Developed and reviewed scripts, with expertise in code debugging and unit testing. Created tools for validation, verification, and integration.</li>
+          <li>- Led a team of 8 engineers and supported project management efforts, achieving a 40% reduction in delays within the issue tracking system (Redmine).</li>
+          <li>- Managed audit requests and oversaw the '4K HDR Ultra HD' project for the certification requests for clients such as LG, Hisense, and Panasonic.</li>
+          <li>- Developed features for a QA analyzer app in C# to process Interoperable Mastering Format (IMF) and Material Exchange Format (MXF) media, supporting customers like HBO in validating content for Netflix publication and enhancing the infrastructure with Shell and batch scripting.</li> 
           <li>- Worked with Windows and Linux servers, using DevOps tools for configuration and maintenance.</li>
-          <li>- Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li>
+          <li>- Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li> 
+          <li>- Conducted training sessions for new employees and provided ongoing support for junior team members.</li>   
           <li><b>Tools and Platforms Used:</b> Javascript, Python, C#, Pandas, ElementTree, Unittest, Selenium, YAML, GWT, Regex, XML, JSON, Jira, Jenkins, VSCode, SVN, Git, Postman, SoapUI, FFmpeg, MediaInfo, Video Encoding, DRM (PlayReady, Marlin, ClearKey, Widevine), Redmine.</li>
         </ul>
     ),
@@ -280,10 +285,10 @@ export const experience: TimelineItem[] = [
     content: (
         <ul>
           <li>- Technical and functional analyst in Risk Advisory at Leonardo (client), focusing on GRC platform transformation and Cyber Security.</li>
-          <li>- Contributed to the SOC with system integration (via API REST) and system implementation.</li>
+          <li>- Conducted risk assessments and implemented security measures, including the development of a security dashboard for the SOC.</li>
+          <li>- Worked with standards such as ISO/IEC 27001, NIST Cybersecurity Framework, COBIT, and ITIL.</li>
           <li>- Translated functional requirements into technical specifications for smooth project execution.</li>
-          <li>- Created release manuals, trained clients, and managed work progress under tight
-          deadlines.</li>
+          <li>- Created release manuals, trained clients, and managed work progress under tight deadlines in areas such as Cyber Defence, Cyber Resilience.</li>
           <li><b>Tools and Platforms Used:</b> RSA Archer, Javascript, jQuery, XSLT, CSS, XML, HTML, MS Excel, MS PowerPoint.</li>
         </ul>
     ),
