@@ -272,11 +272,11 @@ export const experience: TimelineItem[] = [
           <li>- Developing and implementing the quality management system, including the creation of a quality manual, procedures, and work instructions.</li>
           <li>- Risks mitigation to ensure smooth operations.</li>
           <li>- Ensuring compliance with all legal requirements and regulations.</li>
-          <li>- Created and managed the recruitment process, including job postings, interviews, and onboarding.</li>
-          <li>- Led the creation and development of a team of 70 team members, overseeing all phases of recruitment, onboarding, and management</li>
+          <li>- Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.</li>
+          <li>- Led the creation and development of a team of more than 70 team members.</li>
           <li>- Tracking progress and task allocation with agile methodologies (SCRUM)</li>
           <li>- Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
-          <li><b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python</li>
+          <li><b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Discord, DocuSign, CRM, Tableau, ProofHub, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python</li>
         </ul>
     ),
   },
