@@ -94,10 +94,10 @@ export const aboutData: About = {
   description: `I am a Quality Manager with a background in Software Engineering and Project Management. Skilled in Python and JavaScript, I thrive on problem-solving and innovation. Passionate about technology, I continuously explore new trends and advancements. Outside of work, I enjoy building FPV drones, riding my motorbike, and discovering new countries and cultures.`,
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
-    {label: 'Age', text: '36', Icon: CalendarIcon},
+    {label: 'Age', text: '37', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
     {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Bari', Icon: AcademicCapIcon},
+    {label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
   ],
 };
@@ -248,10 +248,34 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
+    date: '24 August 2020',
+    location: 'Virtual Course',
+    title: 'Understanding ATSC 3.0 @ SMPTE',
+    content: <p>As a standard for both over-the-air Broadcast and Broadband internet delivery, ATSC 3.0 is the future of broadcast television. [...] Discussed are the basic principles and advanced techniques of audio and video compression, how internet protocols have been adapted to broadcasting and the new digital transmission systems. and their capabilities to send multiple bitstreams with a flexible choice of data rates and reception robustness.</p>,
+  },
+  {
+    date: '10 March 2020 - 13 March 2020',
+    location: 'London, Uk',
+    title: 'Developing on AWS @ QA Ltd',
+    content: <p>Developing on AWS helps developers understand how to use the AWS SDK to develop secure and scalable cloud applications. The course provides in-depth knowledge about how to interact with AWS using code and covers key concepts, best practices, and troubleshooting tips.</p>,
+  },
+  {
+    date: '28 January 2020 - 31 January 2020',
+    location: 'Bristol, Uk',
+    title: 'C# Programming Language @ QA Ltd',
+    content: <p>This course concentrates on the C# programming language itself, to fully prepare delegates in readiness for using the .NET Framework/Core. No Object-Orientated knowledge is assumed. From basic procedural syntax to sophisticated object-oriented programming techniques, delegates will learn how to write .NET code that is robust and maintainable.</p>,
+  },
+  {
+    date: '29 August 2018 - 30 August 2018',
+    location: 'Bristol, Uk',
+    title: 'Audio and Video Fundamentals for Engineers @ IABM',
+    content: <p>This 2 day course builds your understanding of how images and sound are turned into audio and video signals then passed along the end-to-end broadcast chain from acquisition through production distribution and delivery.</p>,
+  },
+  {
     date: '2008 – 2015',
     location: 'Bari, Italy',
     title: 'BSc Computer Science @ University of Bari',
-    content: <p>Algorithms and data structures, Databases, Software Engineering, Computer Networks, Programming Languages, Human-Computer Interaction, Web services.</p>,
+    content: <p>Main exams: Algorithms and data structures, Databases, Software Engineering, Computer Networks, Programming Languages, Human-Computer Interaction, Web services.</p>,
   },
   {
     date: '2002 – 2007',
@@ -356,6 +380,10 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+    {
+      name: 'Pro Trainer, Coding Giants',
+      text: 'Francesco and I worked together at Coding Giants, where he was my manager in charge of class coordination, materials, and workflows. From the very beginning, I appreciated his way of working: precise in assigning tasks, always clear about goals, and detail-oriented. He was always kind, approachable, and never too strict, yet perfectly capable of leading the team with balance and competence. Together, we always managed to find effective solutions to everyday problems, working in a collaborative and positive atmosphere. Francesco also succeeded in creating a great team environment within a rather large group (almost 70 people!) that wasn\'t always easy to manage. He\'s someone who is truly a pleasure to work and talk with, and I\'m glad I had the chance to collaborate with him. I really hope we\'ll get to work together again in the future!'
+    },
     {
       name: 'Project Manager, Eurofins Digital Testing',
       text: 'Francesco\'s support has always been incredible helpful to me, and his recent support of PM for myself/test case team has massively helped my Jira Ticket accuracy and discipline.'
