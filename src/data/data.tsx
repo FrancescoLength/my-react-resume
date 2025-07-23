@@ -64,17 +64,23 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Quality Manager | Project Manager | Software Engineer</strong>
+        <strong className="text-stone-100">Project Manager | Software Engineer</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      I specialize in process optimization, strategic planning, and aligning technical solutions with business objectives
+      Technical Project Manager with Software Engineering expertise, delivering measurable results through code and leadership. Specialized in AI integrations, automation, and leading technical teams to build solutions that drive business growth and operational efficiency.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/assets/FS_Project_Manager.pdf',
+      text: 'Project Manager Resume',
+      primary: true,
+      Icon: ArrowDownTrayIcon,
+    },
+    {
+      href: '/assets/FS_Software_Engineer.pdf',
+      text: 'Software Engineer Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -91,7 +97,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a Quality Manager with a background in Software Engineering and Project Management. Skilled in Python and JavaScript, I thrive on problem-solving and innovation. Passionate about technology, I continuously explore new trends and advancements. Outside of work, I enjoy building FPV drones, riding my motorbike, and discovering new countries and cultures.`,
+  description: `IT Project Manager with Software Engineering background. Expert in leading technical teams (75+ professionals) and delivering projects 15% ahead of schedule. My coding skills in Python, JavaScript, and AI enable effective technical leadership and innovative problem-solving. Currently focused on AI automation projects. When not coding, I build FPV drones, ride my motorbike, and explore new cultures.`,
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '37', Icon: CalendarIcon},
@@ -252,24 +258,40 @@ export const education: TimelineItem[] = [
     location: 'Virtual Course',
     title: 'Understanding ATSC 3.0 @ SMPTE',
     content: <p>As a standard for both over-the-air Broadcast and Broadband internet delivery, ATSC 3.0 is the future of broadcast television. [...] Discussed are the basic principles and advanced techniques of audio and video compression, how internet protocols have been adapted to broadcasting and the new digital transmission systems. and their capabilities to send multiple bitstreams with a flexible choice of data rates and reception robustness.</p>,
+    reference: {
+      href: '/assets/FS_SMPTE_ATSC3.0_self_study.pdf',
+      text: 'Certificate',
+    },
   },
   {
     date: '10 March 2020 - 13 March 2020',
     location: 'London, Uk',
     title: 'Developing on AWS @ QA Ltd',
     content: <p>Developing on AWS helps developers understand how to use the AWS SDK to develop secure and scalable cloud applications. The course provides in-depth knowledge about how to interact with AWS using code and covers key concepts, best practices, and troubleshooting tips.</p>,
+    reference: {
+      href: '/assets/FS_QA_Certificate_of_Attendance_for_AWS_Start_Date_11032020_Ref.pdf',
+      text: 'Certificate',
+    },
   },
   {
     date: '28 January 2020 - 31 January 2020',
     location: 'Bristol, Uk',
     title: 'C# Programming Language @ QA Ltd',
     content: <p>This course concentrates on the C# programming language itself, to fully prepare delegates in readiness for using the .NET Framework/Core. No Object-Orientated knowledge is assumed. From basic procedural syntax to sophisticated object-oriented programming techniques, delegates will learn how to write .NET code that is robust and maintainable.</p>,
+    reference: {
+      href: '/assets/QA_Certificate_of_Attendance_for_The_C#_Programming_Language_Start_Date_27012020_Ref 9180826.pdf',
+      text: 'Certificate',
+    },
   },
   {
     date: '29 August 2018 - 30 August 2018',
     location: 'Bristol, Uk',
     title: 'Audio and Video Fundamentals for Engineers @ IABM',
     content: <p>This 2 day course builds your understanding of how images and sound are turned into audio and video signals then passed along the end-to-end broadcast chain from acquisition through production distribution and delivery.</p>,
+    reference: {
+      href: '/assets/IABM_Audio_&_Video_Fundamentals_for_Engineers.pdf',
+      text: 'Certificate',
+    },
   },
   {
     date: '2008 – 2015',
@@ -287,7 +309,23 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'August 2023 – Present',
+    date: 'June 2025 - Current',
+    location: 'Remote',
+    title: 'Full Stack Developer @ Freelance',
+    content: (
+        <ul>
+          <li>- Developing full-stack applications with modern technologies such as FastAPI, React, and Tailwind.</li>
+          <li>- Automating workflows and integrating AI services via Gemini API, OpenAI, Claude, and local LLMs (LLaMA, Mistral, DeepSeek).</li>
+          <li>- Using CLI tools like gemini-cli and ollama for efficient prototyping and experimentation with prompt-based tasks.</li>
+          <li>- Building and maintaining open-source tools to reduce manual data analysis time by 70% using AI summarization.</li>
+          <li>- Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.</li>
+          <li>- Exploring multi-model architectures and hybrid deployments for local and cloud-based inference.</li>
+          <li><b>Tools and Platforms Used:</b> Python, JavaScript, FastAPI, React, Tailwind CSS, AI APIs, CLI Tools, Docker, Git</li>
+        </ul>
+    ),
+  },
+  {
+    date: 'August 2023 – June 2025',
     location: 'Remote',
     title: 'Quality Manager @ Coding Giants',
     content: (
@@ -303,6 +341,10 @@ export const experience: TimelineItem[] = [
           <li><b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Discord, DocuSign, CRM, Tableau, ProofHub, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python</li>
         </ul>
     ),
+    reference: {
+      href: '/assets/FS_Reference_letter.pdf',
+      text: 'Reference Letter',
+    },
   },
   {
     date: 'May 2018 – April 2023',
@@ -417,7 +459,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'I am always open to new opportunities and collaborations. Feel free to reach out to me for any inquiries or just to say hello.',
+  description: 'Open to Software Engineering and Technical Leadership opportunities, particularly innovative projects combining development with AI. Available for automation and AI integration consulting.',
   items: [
     {
       type: ContactType.Email,

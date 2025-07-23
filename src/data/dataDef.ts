@@ -91,6 +91,10 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+  reference?: {
+    href: string;
+    text: string;
+  };
 }
 
 /**
