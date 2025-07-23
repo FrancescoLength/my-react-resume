@@ -308,7 +308,7 @@ export const education: TimelineItem[] = [
       </p>
     ),
     reference: {
-      href: '/assets/QA_Certificate_of_Attendance_for_The_C#_Programming_Language_Start_Date_27012020_Ref 9180826.pdf',
+      href: '/assets/FS_QA_Certificate_of_Attendance_for_The_C#_Programming_Language_Start_Date_27012020_Ref 9180826.pdf',
       text: 'Certificate',
     },
   },
@@ -323,7 +323,7 @@ export const education: TimelineItem[] = [
       </p>
     ),
     reference: {
-      href: '/assets/IABM_Audio_&_Video_Fundamentals_for_Engineers.pdf',
+      href: '/assets/FS_IABM_Audio_&_Video_Fundamentals_for_Engineers.pdf',
       text: 'Certificate',
     },
   },
@@ -411,7 +411,7 @@ export const experience: TimelineItem[] = [
       </ul>
     ),
     reference: {
-      href: '/assets/FS_Reference_letter.pdf',
+      href: '/assets/FS_CG_Reference_letter.pdf',
       text: 'Reference Letter',
     },
   },
