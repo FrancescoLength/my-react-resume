@@ -14,8 +14,8 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
             {reference && (
               <a
                 className="ml-4 flex items-center gap-x-2 rounded-full border-2 border-orange-500 bg-stone-700 px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 ring-orange-500"
-                href={reference.href}
-                download>
+                download
+                href={reference.href}>
                 {reference.text}
                 <ArrowDownTrayIcon className="h-5 w-5 text-white" />
               </a>
