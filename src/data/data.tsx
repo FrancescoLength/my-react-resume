@@ -308,7 +308,7 @@ export const education: TimelineItem[] = [
       </p>
     ),
     reference: {
-      href: '/assets/FS_QA_Certificate_of_Attendance_for_The_C#_Programming_Language_Start_Date_27012020_Ref 9180826.pdf',
+      href: '/assets/FS_QA_Certificate_of_Attendance_for_The_CSharp_Programming_Language_Start_Date_27012020_Ref_9180826.pdf',
       text: 'Certificate',
     },
   },
