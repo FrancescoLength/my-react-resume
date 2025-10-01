@@ -67,7 +67,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">IT Project Manager</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        IT Project Manager with a strong software engineering background, specialized in AI integration and task automation. Proven ability to lead large cross-functional teams and deliver complex projects ahead of schedule, driving business growth and operational efficiency. Experienced in technical leadership, team building, and process optimization, with a track record that includes working with Deloitte and being featured in press.
+        Driving business growth and efficiency through AI-powered automation and hands-on technical leadership.
       </p>
     </>
   ),
@@ -91,7 +91,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `With extensive experience managing large-scale technical projects, I specialize in bridging the gap between strategy and execution. I thrive at orchestrating cross-functional teams, optimizing workflows, and implementing AI-driven automation to enhance operational efficiency. Proficient in Python and JavaScript, I enjoy contributing technically when needed while enabling teams to deliver high-impact solutions. Beyond work, I pursue FPV drone flying, motorbike adventures, and travel to discover new cultures.`,
+  description: `With a foundation in Software Engineering, I bridge the gap between high-level strategy and technical execution. My experience leading large, cross-functional teams of over 75 professionals has enabled me to deliver complex projects up to 15% ahead of schedule. My hands-on expertise in Python, JavaScript, and AI fosters clear communication and innovative problem-solving, with a current focus on pioneering AI-driven automation initiatives. Outside of work, I'm passionate about building FPV drones, riding my motorbike, and exploring new cultures through travel.`,
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '37', Icon: CalendarIcon},
