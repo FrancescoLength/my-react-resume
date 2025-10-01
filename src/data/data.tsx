@@ -63,25 +63,18 @@ export const heroData: Hero = {
   name: `Francesco Schino`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Project Manager | Software Engineer</strong>
+      <p className="prose-base text-stone-200 sm:prose-lg lg:prose-2xl">
+        <strong className="text-stone-100">IT Project Manager</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Specialized in AI integrations, automation, and leading technical teams to build solutions that
-        drive business growth and operational efficiency.
+        IT Project Manager with a strong software engineering background, specialized in AI integration and task automation. Proven ability to lead large cross-functional teams and deliver complex projects ahead of schedule, driving business growth and operational efficiency. Experienced in technical leadership, team building, and process optimization, with a track record that includes working with Deloitte and being featured in press.
       </p>
     </>
   ),
   actions: [
     {
       href: '/assets/FS_Project_Manager.pdf',
-      text: 'Project Manager Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: '/assets/FS_Software_Engineer.pdf',
-      text: 'Software Engineer Resume',
+      text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
@@ -98,14 +91,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `IT Project Manager with Software Engineering background. Expert in leading technical teams (75+ professionals) and delivering projects 15% ahead of schedule. My coding skills in Python, JavaScript, and AI enable effective technical leadership and innovative problem-solving. Currently focused on AI automation projects. When not coding, I build FPV drones, ride my motorbike, and explore new cultures.`,
+  description: `With extensive experience managing large-scale technical projects, I specialize in bridging the gap between strategy and execution. I thrive at orchestrating cross-functional teams, optimizing workflows, and implementing AI-driven automation to enhance operational efficiency. Proficient in Python and JavaScript, I enjoy contributing technically when needed while enabling teams to deliver high-impact solutions. Beyond work, I pursue FPV drone flying, motorbike adventures, and travel to discover new cultures.`,
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '37', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
     {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
     {label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Self Employed / Contractor', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -131,18 +124,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Java',
         level: 7,
-      },
-      {
-        name: 'C',
-        level: 5,
-      },
-      {
-        name: 'C++',
-        level: 5,
-      },
-      {
-        name: 'C#',
-        level: 6,
       },
       {
         name: 'SQL',
@@ -353,60 +334,21 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'June 2025 - Current',
-    location: 'Remote',
-    title: 'Full Stack Developer @ Freelance',
-    content: (
-      <ul>
-        <li>- Developing full-stack applications with modern technologies such as FastAPI, React, and Tailwind.</li>
-        <li>
-          - Automating workflows and integrating AI services via Gemini API, OpenAI, Claude, and local LLMs (LLaMA,
-          Mistral, DeepSeek).
-        </li>
-        <li>
-          - Using CLI tools like gemini-cli and ollama for efficient prototyping and experimentation with prompt-based
-          tasks.
-        </li>
-        <li>
-          - Building and maintaining open-source tools to reduce manual data analysis time by 70% using AI
-          summarization.
-        </li>
-        <li>
-          - Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.
-        </li>
-        <li>- Exploring multi-model architectures and hybrid deployments for local and cloud-based inference.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Python, JavaScript, FastAPI, React, Tailwind CSS, AI APIs, CLI Tools, Docker,
-          Git
-        </li>
-      </ul>
-    ),
-  },
-  {
     date: 'August 2023 – June 2025',
     location: 'Remote',
     title: 'Quality Manager @ Coding Giants',
     content: (
       <ul>
+        <li>● Establishing the Italian branch of Coding Giants, working directly with the founders and Italian Country Manager.</li>
+        <li>● Developing and implementing the quality management system, including the creation of a quality manual, procedures, and work instructions.</li>
+        <li>● Risks mitigation to ensure smooth operations.</li>
+        <li>● Ensuring compliance with all legal requirements and regulations.</li>
+        <li>● Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.</li>
+        <li>● Led the creation and development of a team of more than 70 team members.</li>
+        <li>● Tracking progress and task allocation with agile methodologies (SCRUM)</li>
+        <li>● Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
         <li>
-          - Establishing the Italian branch of Coding Giants, working directly with the founders and Italian Country
-          Manager.
-        </li>
-        <li>
-          - Developing and implementing the quality management system, including the creation of a quality manual,
-          procedures, and work instructions.
-        </li>
-        <li>- Risks mitigation to ensure smooth operations.</li>
-        <li>- Ensuring compliance with all legal requirements and regulations.</li>
-        <li>
-          - Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.
-        </li>
-        <li>- Led the creation and development of a team of more than 70 team members.</li>
-        <li>- Tracking progress and task allocation with agile methodologies (SCRUM)</li>
-        <li>- Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Discord, DocuSign, CRM, Tableau,
-          ProofHub, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python
+          <b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Discord, DocuSign, CRM, Tableau, ProofHub, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python
         </li>
       </ul>
     ),
@@ -421,35 +363,20 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer @ Eurofins Digital Testing',
     content: (
       <ul>
-        <li>
-          - Designed and implemented test plans, automated and manual test cases, and test materials, including
-          DASH-format media, for the broadband and broadcasting industry (HbbTv), serving clients such as BBC and
-          Tivùsat.
-        </li>
-        <li>
-          - Developed and reviewed scripts, with expertise in code debugging and unit testing. Created tools for
-          validation, verification, and integration.
-        </li>
-        <li>
-          - Led a team of 8 engineers and supported project management efforts, achieving a 40% reduction in delays
-          within the issue tracking system (Redmine).
-        </li>
-        <li>
-          - Managed audit requests and oversaw the '4K HDR Ultra HD' project for the certification requests for clients
-          such as LG, Hisense, and Panasonic.
-        </li>
-        <li>
-          - Developed features for a QA analyzer app in C# to process Interoperable Mastering Format (IMF) and Material
+        <li>● Designed and implemented test plans, automated and manual test cases, and test materials, including DASH-format media, for the broadband and broadcasting industry (HbbTv), serving clients such as BBC and Tivùsat.</li>
+        <li>● Developed and reviewed scripts, with expertise in code debugging and unit testing. Created tools for validation, verification, and integration.</li>
+        <li>● Led a team of 8 engineers and supported project management efforts, achieving a 40% reduction in delays
+          within the issue tracking system (Redmine).</li>
+        <li>● Managed audit requests and oversaw the '4K HDR Ultra HD' project for the certification requests for clients
+          such as LG, Hisense, and Panasonic.</li>
+        <li>● Developed features for a QA analyzer app in C# to process Interoperable Mastering Format (IMF) and Material
           Exchange Format (MXF) media, supporting customers like HBO in validating content for Netflix publication and
-          enhancing the infrastructure with Shell and batch scripting.
-        </li>
-        <li>- Worked with Windows and Linux servers, using DevOps tools for configuration and maintenance.</li>
-        <li>- Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li>
-        <li>- Conducted training sessions for new employees and provided ongoing support for junior team members.</li>
+          enhancing the infrastructure with Shell and batch scripting.</li>
+        <li>● Worked with Windows and Linux servers, using DevOps tools for configuration and maintenance.</li>
+        <li>● Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li>
+        <li>● Conducted training sessions for new employees and provided ongoing support for junior team members.</li>
         <li>
-          <b>Tools and Platforms Used:</b> Javascript, Python, C#, Pandas, ElementTree, Unittest, Selenium, YAML, GWT,
-          Regex, XML, JSON, Jira, Jenkins, VSCode, SVN, Git, Postman, SoapUI, FFmpeg, MediaInfo, Video Encoding, DRM
-          (PlayReady, Marlin, ClearKey, Widevine), Redmine.
+          <b>Tools and Platforms Used:</b> Javascript, Python, C#, Pandas, ElementTree, Unittest, Selenium, YAML, GWT, Regex, XML, JSON, Jira, Jenkins, VSCode, SVN, Git, Postman, SoapUI, FFmpeg, MediaInfo, Video Encoding, DRM (PlayReady, Marlin, ClearKey, Widevine), Redmine.
         </li>
       </ul>
     ),
@@ -460,20 +387,11 @@ export const experience: TimelineItem[] = [
     title: 'Cyber Security Analyst @ Deloitte',
     content: (
       <ul>
-        <li>
-          - Technical and functional analyst in Risk Advisory at Leonardo (client), focusing on GRC platform
-          transformation and Cyber Security.
-        </li>
-        <li>
-          - Conducted risk assessments and implemented security measures, including the development of a security
-          dashboard for the SOC.
-        </li>
-        <li>- Worked with standards such as ISO/IEC 27001, NIST Cybersecurity Framework, COBIT, and ITIL.</li>
-        <li>- Translated functional requirements into technical specifications for smooth project execution.</li>
-        <li>
-          - Created release manuals, trained clients, and managed work progress under tight deadlines in areas such as
-          Cyber Defence, Cyber Resilience.
-        </li>
+        <li>● Technical and functional analyst in Risk Advisory at Leonardo (client), focusing on GRC platform transformation and Cyber Security.</li>
+        <li>● Conducted risk assessments and implemented security measures, including the development of a security dashboard for the SOC.</li>
+        <li>● Worked with standards such as ISO/IEC 27001, NIST Cybersecurity Framework, COBIT, and ITIL.</li>
+        <li>● Translated functional requirements into technical specifications for smooth project execution.</li>
+        <li>● Created release manuals, trained clients, and managed work progress under tight deadlines in areas such as Cyber Defence, Cyber Resilience.</li>
         <li>
           <b>Tools and Platforms Used:</b> RSA Archer, Javascript, jQuery, XSLT, CSS, XML, HTML, MS Excel, MS
           PowerPoint.
@@ -487,14 +405,10 @@ export const experience: TimelineItem[] = [
     title: 'Software Developer @ Capgemini',
     content: (
       <ul>
-        <li>- Utilized Software AG products to develop IoT and Big Data solutions for Octo Telematics (client)</li>
+        <li>● Utilized Software AG products to develop IoT and Big Data solutions for Octo Telematics (client)</li>
+        <li>● Analyzed and managed applications for international telephone traffic interconnection and developing components for SMS routing and configuration for Telecom Italia Sparkle (client)</li>
         <li>
-          - Analyzed and managed applications for international telephone traffic interconnection and developing
-          components for SMS routing and configuration for Telecom Italia Sparkle (client)
-        </li>
-        <li>
-          <b>Tools and Platforms Used:</b> Java, SOAP, REST, SQL, Oracle, Maven, Tomcat, Hibernate, CSS, HTML, IoT,
-          Linux, SVN, EPL, Mongo, Virtualization.
+          <b>Tools and Platforms Used:</b> Java, SOAP, REST, SQL, Oracle, Maven, Tomcat, Hibernate, CSS, HTML, IoT, Linux, SVN, EPL, Mongo, Virtualization.
         </li>
       </ul>
     ),
@@ -505,14 +419,8 @@ export const experience: TimelineItem[] = [
     title: 'Project Leader @ La Scuola Open Source',
     content: (
       <ul>
-        <li>
-          - Developed a custom tablet using selected electronic components, assembled and configured as an updated
-          version of the 2014 prototype. .
-        </li>
-        <li>
-          - The main feature includes the installation of Ubuntu OS with integrated development environments (IDEs) for
-          Java and Python.
-        </li>
+        <li>● Developed a custom tablet using selected electronic components, assembled and configured as an updated version of the 2014 prototype.</li>
+        <li>● The main feature includes the installation of Ubuntu OS with integrated development environments (IDEs) for Java and Python.</li>
         <li>
           <b>Tools and Platforms Used:</b> Arduino, Raspberry Pi, IoT.
         </li>
@@ -525,10 +433,7 @@ export const experience: TimelineItem[] = [
     title: 'Graduating student @ LaserInn',
     content: (
       <ul>
-        <li>
-          - Thesis: development of a prototype for the acquisition of physiological signals and of an act software able
-          to extract and recognize the human emotions.
-        </li>
+        <li>● Thesis: development of a prototype for the acquisition of physiological signals and of an act software able to extract and recognize the human emotions.</li>
         <li>
           <b>Tools and Platforms Used:</b> Arduino, C, MATLAB, LaTeX, R, E-Health.
         </li>
@@ -543,6 +448,10 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
+    {
+      name: 'Pro Trainer, Coding Giants',
+      text: "Working with Francesco as my direct supervisor always resulted in quality work. I feel lucky to have had the opportunity to learn from his wealth of experience - he was able to bring both clarity and structure to the team while creating solid processes which are still in place today, because they work. More than the results, working alongside Francesco always felt easy and organic, and had a positive impact on my day-to-day work experience.",
+    },
     {
       name: 'Pro Trainer, Coding Giants',
       text: "Francesco and I worked together at Coding Giants, where he was my manager in charge of class coordination, materials, and workflows. From the very beginning, I appreciated his way of working: precise in assigning tasks, always clear about goals, and detail-oriented. He was always kind, approachable, and never too strict, yet perfectly capable of leading the team with balance and competence. Together, we always managed to find effective solutions to everyday problems, working in a collaborative and positive atmosphere. Francesco also succeeded in creating a great team environment within a rather large group (almost 70 people!) that wasn't always easy to manage. He's someone who is truly a pleasure to work and talk with, and I'm glad I had the chance to collaborate with him. I really hope we'll get to work together again in the future!",
@@ -581,7 +490,7 @@ export const testimonial: TestimonialSection = {
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description:
-    'Open to Software Engineering and Technical Leadership opportunities, particularly innovative projects combining development with AI. Available for automation and AI integration consulting.',
+    'Open to IT Project Management opportunities, with a focus on driving innovative projects that combine software development and AI. Also available for consulting on automation and AI integration to enhance business efficiency.',
   items: [
     {
       type: ContactType.Email,
