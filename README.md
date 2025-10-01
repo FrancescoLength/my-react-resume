@@ -1,7 +1,6 @@
 # Francesco Schino - Personal Website
 
-![immagine](https://github.com/user-attachments/assets/a271730d-ed52-48c0-8fee-cf210bcbabb3)
-
+<img width="1341" height="546" alt="immagine" src="https://github.com/user-attachments/assets/a06975f9-0704-4361-8c4e-48fd9590ec36" />
 
 ## Live Demo
 
@@ -16,7 +15,7 @@ You can view the live demo of the project here: [https://francescoschino.vercel.
 
 ## Getting Started
 
-To get started with your own personalized version of this project, follow these steps:
+To get started with your own personalised version of this project, follow these steps:
 
 1. Clone this repository:
     ```bash
@@ -35,7 +34,7 @@ To get started with your own personalized version of this project, follow these 
 
 4. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the project in action.
 
-5. Customize the content, add your own projects, skills, and experience, and personalize the design to fit your needs.
+5. Customise the content, add your own projects, skills, and experience, and personalise the design to fit your needs.
 
 ## Technologies Used
 
