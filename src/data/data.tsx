@@ -16,6 +16,8 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
 import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
 import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
 import porfolioImage7 from '../images/portfolio/portfolio-7.webp';
+import porfolioImage8 from '../images/portfolio/portfolio-8.webp';
+import porfolioImage9 from '../images/portfolio/portfolio-9.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -236,6 +238,20 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://github.com/FrancescoLength/my-react-resume',
     image: porfolioImage7,
   },
+  {
+    title: 'Research Presentation on Usability and Citizen Satisfaction in Public Administration Websites',
+    description:
+      'I had the privilege of presenting my research at the “Qualità Web PA: sharing knowledge, tools and usability experiences” seminar (University of Bari, 18 June 2015), under the supervision of Professor Giuseppe Pirlo, focusing on usability and citizen satisfaction in public administration websites through sensor-based evaluation.',
+    url: 'https://eventipa.formez.it/eventi/15c0296e-7798-4de8-9748-23f27cbb67cc',
+    image: porfolioImage8,
+  },
+  {
+    title: 'Bari Makers Meeting 2015 Presentation',
+    description:
+      'Presentation of the open device project “DIY Lego Tablet” at the Bari Makers Meeting 2015 (Bari, 25 October 2015), developed in collaboration with La Scuola Open Source, showcasing a self-built tablet using a Linux-embedded board and Arduino-compatible connections for rapid prototyping.',
+    url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportfolio-9.f7aa24e3.webp&w=1920&q=75',
+    image: porfolioImage9,
+  }
 ];
 
 /**
@@ -421,6 +437,7 @@ export const experience: TimelineItem[] = [
       <ul>
         <li>● Developed a custom tablet using selected electronic components, assembled and configured as an updated version of the 2014 prototype.</li>
         <li>● The main feature includes the installation of Ubuntu OS with integrated development environments (IDEs) for Java and Python.</li>
+        <li>● Designed and developed project proposals, including budgets and critical paths.</li>
         <li>
           <b>Tools and Platforms Used:</b> Arduino, Raspberry Pi, IoT.
         </li>
