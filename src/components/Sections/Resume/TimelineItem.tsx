@@ -1,7 +1,7 @@
 import {ArrowDownTrayIcon} from '@heroicons/react/24/outline';
 import {FC, memo} from 'react';
 
-import {TimelineItem} from '../../../data/dataDef';
+import type {TimelineItem} from '../../../data/dataDef';
 
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {title, date, location, content, reference} = item;
@@ -9,11 +9,11 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
     <div className="flex flex-col pb-8 text-center last:pb-0 md:text-left">
       <div className="flex flex-col pb-4">
         <div className="text-xl font-bold">
-          <div className="flex items-center">
+          <div className="flex items-center justify-between">
             {title}
             {reference && (
               <a
-                className="ml-4 flex items-center gap-x-2 rounded-full border-2 border-orange-500 bg-stone-700 px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 ring-orange-500"
+                className="flex items-center gap-x-2 rounded-full border-2 border-orange-500 bg-stone-700 px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 ring-orange-500"
                 download
                 href={reference.href}>
                 {reference.text}
