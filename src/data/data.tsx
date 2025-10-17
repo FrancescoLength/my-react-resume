@@ -75,7 +75,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/FS_Project_Manager.pdf',
+      href: '/assets/FS_Technical_Project_Manager.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
