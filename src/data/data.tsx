@@ -259,6 +259,20 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
+    date: '16 Dec 2025',
+    location: 'Bath, Uk',
+    title: 'BCS EXIN Foundation Certificate in Agile Scrum @ Bath Spa University',
+    content: (
+      <p>
+        The British Computer Society (BCS) is a global community made up of business leaders, educators, practitioners and policymakers, all committed to their mission. The EXIN Agile Scrum Foundation certification provides a comprehensive understanding of Agile principles and Scrum practices, equipping individuals with the knowledge to effectively contribute to Agile projects and teams.
+      </p>
+    ),
+    reference: {
+      href: '/assets/FS_BCS_EXIN_Foundation_Certificate_in_Agile_Scrum_V4.0.pdf',
+      text: 'Certificate',
+    },
+  },
+  {
     date: '24 August 2020',
     location: 'Virtual Course',
     title: 'Understanding ATSC 3.0 @ SMPTE',
