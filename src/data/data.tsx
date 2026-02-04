@@ -18,6 +18,8 @@ import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
 import porfolioImage7 from '../images/portfolio/portfolio-7.webp';
 import porfolioImage8 from '../images/portfolio/portfolio-8.webp';
 import porfolioImage9 from '../images/portfolio/portfolio-9.webp';
+import porfolioImage10 from '../images/portfolio/portfolio-10.webp';
+import porfolioImage11 from '../images/portfolio/portfolio-11.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -95,12 +97,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `With a foundation in Software Engineering, I bridge the gap between high-level strategy and technical execution. My experience leading large, cross-functional teams of over 75 professionals has enabled me to deliver complex projects up to 15% ahead of schedule. My hands-on expertise in Python, JavaScript, and AI fosters clear communication and innovative problem-solving, with a current focus on pioneering AI-driven automation initiatives. Outside of work, I'm passionate about building FPV drones, riding my motorbike, and exploring new cultures through travel.`,
   aboutItems: [
-    {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
-    {label: 'Age', text: '37', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
-    {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
-    {label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Bristol, UK', Icon: MapIcon },
+    { label: 'Age', text: '37', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon },
+    { label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon },
+    { label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -251,6 +253,20 @@ export const portfolioItems: PortfolioItem[] = [
       'Presentation of the open device project “DIY Lego Tablet” at the Bari Makers Meeting 2015 (Bari, 25 October 2015), developed in collaboration with La Scuola Open Source, showcasing a self-built tablet using a Linux-embedded board and Arduino-compatible connections for rapid prototyping.',
     url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportfolio-9.f7aa24e3.webp&w=1920&q=75',
     image: porfolioImage9,
+  },
+  {
+    title: 'GABS Client React Application',
+    description:
+      'This is the modern Frontend React application for the Gym Automatic Booking System (GABS). It interacts with the GABS API to automate gym class bookings, track live availability, and manage user schedules.The project has been recently refactored to use TypeScript, Vite, Tailwind CSS, and a Feature-Based Architecture.',
+    url: 'https://github.com/FrancescoLength/gabs-client-react',
+    image: porfolioImage10,
+  },
+  {
+    title: 'GABS API Server',
+    description:
+      'This Flask-based API server empowers users to seamlessly interact with a famous Bristol gym\'s website, automating the process of viewing, booking, and managing gym class reservations. Designed for efficiency and convenience, it acts as a robust backend for custom client applications (such as a React frontend),ideal for deployment on low-power devices like a Raspberry Pi.',
+    url: 'https://github.com/FrancescoLength/gabs-api-server',
+    image: porfolioImage11,
   }
 ];
 
@@ -348,6 +364,7 @@ export const education: TimelineItem[] = [
         Languages, Human-Computer Interaction, Web services.
       </p>
     ),
+    image: '/images/uniba.svg',
   },
   {
     date: '2002 – 2007',
