@@ -363,8 +363,7 @@ export const education: TimelineItem[] = [
         Main exams: Algorithms and data structures, Databases, Software Engineering, Computer Networks, Programming
         Languages, Human-Computer Interaction, Web services.
       </p>
-    ),
-    image: '/images/uniba.svg',
+    )
   },
   {
     date: '2002 – 2007',
