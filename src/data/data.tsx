@@ -97,12 +97,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `With a foundation in Software Engineering, I bridge the gap between high-level strategy and technical execution. My experience leading large, cross-functional teams of over 75 professionals has enabled me to deliver complex projects up to 15% ahead of schedule. My hands-on expertise in Python, JavaScript, and AI fosters clear communication and innovative problem-solving, with a current focus on pioneering AI-driven automation initiatives. Outside of work, I'm passionate about building FPV drones, riding my motorbike, and exploring new cultures through travel.`,
   aboutItems: [
-    { label: 'Location', text: 'Bristol, UK', Icon: MapIcon },
-    { label: 'Age', text: '37', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon },
-    { label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon },
-    { label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
+    {label: 'Age', text: '37', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
+    {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
+    {label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon},
   ],
 };
 
