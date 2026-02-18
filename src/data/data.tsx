@@ -20,6 +20,8 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.webp';
 import porfolioImage9 from '../images/portfolio/portfolio-9.webp';
 import porfolioImage10 from '../images/portfolio/portfolio-10.webp';
 import porfolioImage11 from '../images/portfolio/portfolio-11.webp';
+import porfolioImage12 from '../images/portfolio/portfolio-12.webp';
+import porfolioImage13 from '../images/portfolio/portfolio-13.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -267,6 +269,20 @@ export const portfolioItems: PortfolioItem[] = [
       'This Flask-based API server empowers users to seamlessly interact with a famous Bristol gym\'s website, automating the process of viewing, booking, and managing gym class reservations. Designed for efficiency and convenience, it acts as a robust backend for custom client applications (such as a React frontend),ideal for deployment on low-power devices like a Raspberry Pi.',
     url: 'https://github.com/FrancescoLength/gabs-api-server',
     image: porfolioImage11,
+  },
+  {
+    title: 'Invito di nozze online',
+    description:
+      'I developed this digital platform to offer couples an elegant, eco-friendly alternative to traditional paper wedding invitations. The project focuses on streamlining guest management through a mobile-first experience, featuring real-time RSVP tracking, integrated GPS navigation for venues, and digital wedding registries. By combining sophisticated design with practical tools like menu preference collection and custom countdowns, the platform simplifies event planning while reducing environmental impact.',
+    url: 'https://www.invitodinozzeonline.com/',
+    image: porfolioImage12,
+  },
+  {
+    title: 'Francesca e Girolamo Wedding',
+    description:
+      'This project represents the first successful deployment of my digital invitation platform. Developed for a real wedding in Monopoli, Puglia, the site serves as a central hub for guests, featuring a mobile-first design that prioritizes sustainability. I implemented a custom RSVP system, integrated Google Maps for venue navigation, and a digital gift registry. The challenge was to blend a "Green" philosophy with high-end aesthetics, resulting in a seamless user experience that eliminated paper waste while keeping all guest data organized in real-time.',
+    url: 'https://francescaegirolamo.vercel.app/',
+    image: porfolioImage13,
   }
 ];
 
