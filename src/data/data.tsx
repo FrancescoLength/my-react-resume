@@ -281,7 +281,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Francesca e Girolamo Wedding',
     description:
       'This project represents the first successful deployment of my digital invitation platform. Developed for a real wedding in Monopoli, Puglia, the site serves as a central hub for guests, featuring a mobile-first design that prioritizes sustainability. I implemented a custom RSVP system, integrated Google Maps for venue navigation, and a digital gift registry. The challenge was to blend a "Green" philosophy with high-end aesthetics, resulting in a seamless user experience that eliminated paper waste while keeping all guest data organized in real-time.',
-    url: 'https://francescaegirolamo.vercel.app/',
+    url: '',
     image: porfolioImage13,
   }
 ];
