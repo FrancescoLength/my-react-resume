@@ -11,17 +11,8 @@ import {
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.webp';
 import porfolioImage2 from '../images/portfolio/portfolio-2.webp';
-import porfolioImage3 from '../images/portfolio/portfolio-3.webp';
 import porfolioImage4 from '../images/portfolio/portfolio-4.webp';
-import porfolioImage5 from '../images/portfolio/portfolio-5.webp';
-import porfolioImage6 from '../images/portfolio/portfolio-6.webp';
-import porfolioImage7 from '../images/portfolio/portfolio-7.webp';
-import porfolioImage8 from '../images/portfolio/portfolio-8.webp';
-import porfolioImage9 from '../images/portfolio/portfolio-9.webp';
 import porfolioImage10 from '../images/portfolio/portfolio-10.webp';
-import porfolioImage11 from '../images/portfolio/portfolio-11.webp';
-import porfolioImage12 from '../images/portfolio/portfolio-12.webp';
-import porfolioImage13 from '../images/portfolio/portfolio-13.webp';
 import profilepic from '../images/profilepic.webp';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -41,8 +32,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Francesco Schino',
-  description: "Francesco Schino's react resume website",
+  title: 'Francesco Schino | Lead AI Engineer',
+  description: "Francesco Schino's Professional Portfolio and Resume",
 };
 
 /**
@@ -70,16 +61,21 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-base text-stone-200 sm:prose-lg lg:prose-2xl">
-        <strong className="text-stone-100">IT Project Manager</strong>
+        <strong className="text-stone-100">Software Engineering Manager / Lead AI Engineer</strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Driving business growth and efficiency through AI-powered automation and hands-on technical leadership.
+        Architecting autonomous AI solutions and leading cross-functional teams to deliver scalable, high-performance
+        systems. <br />
+        <br />
+        <strong className="text-orange-500">
+          Right to work in the UK: Settled Status / ILR (No Sponsorship Required)
+        </strong>
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/FS_Technical_Project_Manager.pdf',
+      href: '/assets/FS_Senior_Python_AI_Engineer.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -97,12 +93,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `With a foundation in Software Engineering, I bridge the gap between high-level strategy and technical execution. My experience leading large, cross-functional teams of over 75 professionals has enabled me to deliver complex projects up to 15% ahead of schedule. My hands-on expertise in Python, JavaScript, and AI fosters clear communication and innovative problem-solving, with a current focus on pioneering AI-driven automation initiatives. Outside of work, I'm passionate about building FPV drones, riding my motorbike, and exploring new cultures through travel.`,
+  description: `With a foundation in Software Engineering and a deep focus on Systems Architecture, I bridge the gap between high-level business strategy and technical execution. My experience leading large, cross-functional teams (up to 70+ professionals) has enabled me to architect scalable backends and deliver complex projects in highly regulated environments. Currently, I specialize in pioneering Autonomous AI-driven automation pipelines (using LangChain, local LLMs like Ollama, and Playwright) and building resilient API ecosystems with Python and FastAPI. Outside of work, I'm passionate about building bespoke FPV drones, riding my motorbike, and exploring new cultures through travel.`,
   aboutItems: [
     {label: 'Location', text: 'Bristol, UK', Icon: MapIcon},
     {label: 'Age', text: '37', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Italian (UK settled status)', Icon: FlagIcon},
-    {label: 'Interests', text: 'Technology, Motorcycles, Traveling', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Technology, FPV Drones, Motorcycles', Icon: SparklesIcon},
     {label: 'Study', text: 'BSc Computer Science @ University of Bari', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Permanent / Contractor / Freelance', Icon: BuildingOffice2Icon},
   ],
@@ -113,78 +109,35 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Hard Skills',
+    name: 'Core Stack & Frameworks',
     skills: [
-      {
-        name: 'Python',
-        level: 8,
-      },
-      {
-        name: 'Javascript',
-        level: 7,
-      },
-      {
-        name: 'Bash Scripting',
-        level: 6,
-      },
-      {
-        name: 'Java',
-        level: 7,
-      },
-      {
-        name: 'SQL',
-        level: 7,
-      },
-      {
-        name: 'HTML',
-        level: 8,
-      },
-      {
-        name: 'CSS',
-        level: 8,
-      },
+      {name: 'Python (Advanced)', level: 10},
+      {name: 'FastAPI / Django', level: 9},
+      {name: 'JavaScript / React.js', level: 8},
+      {name: 'Docker / CI/CD', level: 8},
+      {name: 'SQL / Databases', level: 8},
+      {name: 'C# (.NET Core)', level: 7},
+      {name: 'Java', level: 7},
     ],
   },
   {
-    name: 'Soft Skills',
+    name: 'AI & Automation',
     skills: [
-      {
-        name: 'Creative Problem-Solving',
-        level: 9,
-      },
-      {
-        name: 'Strategic Vision',
-        level: 8,
-      },
-      {
-        name: 'Team Structuring & Leadership',
-        level: 8,
-      },
-      {
-        name: 'Client Management',
-        level: 9,
-      },
-      {
-        name: 'Functional-to-Technical Requirement Mapping',
-        level: 9,
-      },
+      {name: 'LangChain & LLM Orchestration', level: 9},
+      {name: 'Prompt Engineering & Structured Output', level: 9},
+      {name: 'Local LLMs (Ollama, Qwen, LLaMA)', level: 8},
+      {name: 'Playwright & Selenium (Browser RPA)', level: 9},
+      {name: 'OpenAI, Gemini, Claude APIs', level: 8},
     ],
   },
   {
-    name: 'Spoken languages',
+    name: 'Management & Soft Skills',
     skills: [
-      {
-        name: 'Italian',
-        level: 10,
-      },
-      {
-        name: 'English',
-        level: 9,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      {name: 'Creative Problem-Solving', level: 9},
+      {name: 'Strategic Vision & Architecture', level: 9},
+      {name: 'Team Structuring & Leadership', level: 9},
+      {name: 'Agile (Scrum, Kanban)', level: 8},
+      {name: 'Functional-to-Technical Requirement Mapping', level: 9},
     ],
   },
 ];
@@ -194,109 +147,59 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Gym Automatic Booking System',
+    title: 'Taylored CV: CI/CD Pipeline for Autonomous LLM Resumes',
     description:
-      'GymAutomaticBookingSystem aka GABS is an automatic gym class booking system, developed in Python using Selenium to automate the interaction with the booking website of a popular gym in Bristol. ',
-    url: 'https://github.com/FrancescoLength/GABS',
+      'Developed an advanced LangChain pipeline utilizing asyncio and parallel execution to automatically tailor CVs and Cover Letters against precise job descriptions. Supports both cloud (Gemini) and local LLMs (Ollama/Qwen) with strict Pydantic structured schema outputs for ATS optimization.',
+    url: 'https://github.com/FrancescoLength/Taylored_cv',
     image: porfolioImage1,
   },
   {
-    title: '99bars',
+    title: 'AutoEasy: Intelligent Job Application RPA',
     description:
-      "A very first React Native app - Simple puzzle game.  Essentially, the game involves a 3x3 matrix with elements that can toggle between bars, rounds, and crosses. Upon starting the game, bars are initially displayed. When you tap on the bars, they transform into rounds. However, if you fail to touch the bars in time, they evolve into crosses, marking the end of the game. The objective of the game is to tap all the bars before they transition into crosses. It's a timing-based challenge where success hinges on speed and agility. To emerge victorious, players must swiftly touch each bar presented before it transforms crosses.",
-    url: 'https://github.com/FrancescoLength/99bars',
+      'A custom Architecture comprising a Chrome Extension paired with Node.js backend integrating Playwright with Local LLMs to autonomously interpret complex job application DOM forms, inject candidate context, and execute one-click submissions on platforms like LinkedIn.',
+    url: 'https://github.com/FrancescoLength/',
     image: porfolioImage2,
   },
   {
-    title: 'PacMan Sensor Game',
+    title: 'GABS (Gym Automatic Booking System)',
     description:
-      'An article was published about a prototype I developed an emotion extrapolator that analyzes heart rate and skin conductance to identify emotions experienced while playing Pac-Man. The prototype was created using Arduino and Matlab, with the data collected from the sensors processed and analyzed to determine the player’s emotional state. The project was a success, with the results published in an article on Startup Italia.',
-    url: 'https://startupitalia.eu/uncategorized/uno-studente-di-bari-ha-mappato-le-emozioni-umane-giocando-a-pacman/',
-    image: porfolioImage3,
-  },
-  {
-    title: 'DIY Lego Tablet',
-    description:
-      'An article featuring my self-built tablet prototype, developed in collaboration with La Scuola Open Source. The device is based on a Linux-embedded board and includes a touchscreen, battery, and Arduino-compatible connections for rapid prototyping.',
-    url: 'https://www.domusweb.it/it/design/2015/11/16/sos_una_scuola_che_si_occupa_di_futuro_.html',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Emotional recognition system through physiological signal processing',
-    description:
-      'An article by La Repubblica covering my thesis project: a sensor system that analyzes physiological signals, such as heart rate and skin conductance, to assess user satisfaction and emotional response. The technology was designed to evaluate the efficiency of public administration services.',
-    url: 'https://www.repubblica.it/tecnologia/2015/05/28/news/soddisfatto_o_arrabiato_il_sensore_per_valutare_l_efficienza_della_pa-115463006/',
-    image: porfolioImage5,
-  },
-  {
-    title: 'My high-performance freestyle and racing FPV build',
-    description:
-      'Designed for durability, agility, and top-tier flight performance.\n Frame: ImpulseRC Apex,\n  Flight Controller: SpeedyBee F7 V2,\n  ESC: SkyStars Kramam KM50A 3-6S BLHeli_S 4-in-1 ESC,\n  Motors: iFlight Xing2 2306 1755KV,\n  Receiver: TBS Crossfire,\n  VTX: DJI O3 Air Unit,\n  FPV Goggles: DJI Goggles,\n  RC Controller: TBS Tango 2 Pro',
-    url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportfolio-6.98f278cf.webp&w=1920&q=75',
-    image: porfolioImage6,
-  },
-  {
-    title: 'My personal website',
-    description:
-      'Built with React.js, Typescript, Next.js, and styled with Tailwind css and Heroicons. The website is hosted on Vercel and the source code is available on GitHub. This is a fork of the React Resume Template created by tbakerx.',
-    url: 'https://github.com/FrancescoLength/my-react-resume',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Research Presentation on Usability and Citizen Satisfaction in Public Administration Websites',
-    description:
-      'I had the privilege of presenting my research at the “Qualità Web PA: sharing knowledge, tools and usability experiences” seminar (University of Bari, 18 June 2015), under the supervision of Professor Giuseppe Pirlo, focusing on usability and citizen satisfaction in public administration websites through sensor-based evaluation.',
-    url: 'https://eventipa.formez.it/eventi/15c0296e-7798-4de8-9748-23f27cbb67cc',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Bari Makers Meeting 2015 Presentation',
-    description:
-      'Presentation of the open device project “DIY Lego Tablet” at the Bari Makers Meeting 2015 (Bari, 25 October 2015), developed in collaboration with La Scuola Open Source, showcasing a self-built tablet using a Linux-embedded board and Arduino-compatible connections for rapid prototyping.',
-    url: '/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fportfolio-9.f7aa24e3.webp&w=1920&q=75',
-    image: porfolioImage9,
-  },
-  {
-    title: 'GABS Client React Application',
-    description:
-      'This is the modern Frontend React application for the Gym Automatic Booking System (GABS). It interacts with the GABS API to automate gym class bookings, track live availability, and manage user schedules.The project has been recently refactored to use TypeScript, Vite, Tailwind CSS, and a Feature-Based Architecture.',
-    url: 'https://github.com/FrancescoLength/gabs-client-react',
+      'A full-stack architecture featuring a custom Python/Flask API backend and a Vite+React.js frontend, deployed securely via Docker and systemd on edge hardware. Uses Selenium for headless browser interactions to bypass complex auth mechanisms and automate high-traffic bookings.',
+    url: 'https://github.com/FrancescoLength/GABS',
     image: porfolioImage10,
   },
   {
-    title: 'GABS API Server',
+    title: 'CyberChecker: Security Posture Evaluator',
     description:
-      'This Flask-based API server empowers users to seamlessly interact with a famous Bristol gym\'s website, automating the process of viewing, booking, and managing gym class reservations. Designed for efficiency and convenience, it acts as a robust backend for custom client applications (such as a React frontend),ideal for deployment on low-power devices like a Raspberry Pi.',
-    url: 'https://github.com/FrancescoLength/gabs-api-server',
-    image: porfolioImage11,
+      'Engineered a security scanner pipeline combining massive regex-pattern detection, Shannon entropy analysis, ProjectDiscovery Katana integration for deep crawling, and interactive Selenium rendering to identify exposure vulnerabilities in complex Single Page Applications.',
+    url: 'https://github.com/FrancescoLength/',
+    image: porfolioImage4,
   },
-  {
-    title: 'Invito di nozze online',
-    description:
-      'I developed this digital platform to offer couples an elegant, eco-friendly alternative to traditional paper wedding invitations. The project focuses on streamlining guest management through a mobile-first experience, featuring real-time RSVP tracking, integrated GPS navigation for venues, and digital wedding registries. By combining sophisticated design with practical tools like menu preference collection and custom countdowns, the platform simplifies event planning while reducing environmental impact.',
-    url: 'https://www.invitodinozzeonline.com/',
-    image: porfolioImage12,
-  },
-  {
-    title: 'Francesca e Girolamo Wedding',
-    description:
-      'This project represents the first successful deployment of my digital invitation platform. Developed for a real wedding in Monopoli, Puglia, the site serves as a central hub for guests, featuring a mobile-first design that prioritizes sustainability. I implemented a custom RSVP system, integrated Google Maps for venue navigation, and a digital gift registry. The challenge was to blend a "Green" philosophy with high-end aesthetics, resulting in a seamless user experience that eliminated paper waste while keeping all guest data organized in real-time.',
-    url: '',
-    image: porfolioImage13,
-  }
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
+  {
+    date: 'Ongoing',
+    location: 'Remote',
+    title: 'Hugging Face Agents Course @ Hugging Face',
+    content: (
+      <p>
+        Advanced curriculum on designing, training, and deploying autonomous AI Agents using open-source models,
+        LangChain, and Hugging Face infrastructure.
+      </p>
+    ),
+  },
   {
     date: '16 Dec 2025',
     location: 'Bath, Uk',
     title: 'BCS EXIN Foundation Certificate in Agile Scrum @ Bath Spa University',
     content: (
       <p>
-        The British Computer Society (BCS) is a global community made up of business leaders, educators, practitioners and policymakers, all committed to their mission. The EXIN Agile Scrum Foundation certification provides a comprehensive understanding of Agile principles and Scrum practices, equipping individuals with the knowledge to effectively contribute to Agile projects and teams.
+        The EXIN Agile Scrum Foundation certification provides a comprehensive understanding of Agile principles and
+        Scrum practices, equipping individuals with the knowledge to effectively contribute to Agile projects and
+        cross-functional teams.
       </p>
     ),
     reference: {
@@ -310,11 +213,8 @@ export const education: TimelineItem[] = [
     title: 'Understanding ATSC 3.0 @ SMPTE',
     content: (
       <p>
-        As a standard for both over-the-air Broadcast and Broadband internet delivery, ATSC 3.0 is the future of
-        broadcast television. [...] Discussed are the basic principles and advanced techniques of audio and video
-        compression, how internet protocols have been adapted to broadcasting and the new digital transmission systems.
-        and their capabilities to send multiple bitstreams with a flexible choice of data rates and reception
-        robustness.
+        Exploration of Basic principles and advanced techniques of audio and video compression, internet protocols
+        adapted to broadcasting, and next-generation digital transmission capabilities.
       </p>
     ),
     reference: {
@@ -328,9 +228,8 @@ export const education: TimelineItem[] = [
     title: 'Developing on AWS @ QA Ltd',
     content: (
       <p>
-        Developing on AWS helps developers understand how to use the AWS SDK to develop secure and scalable cloud
-        applications. The course provides in-depth knowledge about how to interact with AWS using code and covers key
-        concepts, best practices, and troubleshooting tips.
+        Developing on AWS helps developers understand how to use the AWS SDK to develop secure and highly scalable cloud
+        applications.
       </p>
     ),
     reference: {
@@ -344,29 +243,12 @@ export const education: TimelineItem[] = [
     title: 'C# Programming Language @ QA Ltd',
     content: (
       <p>
-        This course concentrates on the C# programming language itself, to fully prepare delegates in readiness for
-        using the .NET Framework/Core. No Object-Orientated knowledge is assumed. From basic procedural syntax to
-        sophisticated object-oriented programming techniques, delegates will learn how to write .NET code that is robust
-        and maintainable.
+        From basic procedural syntax to sophisticated object-oriented programming techniques, establishing robust
+        paradigms for .NET software architectural maintainability.
       </p>
     ),
     reference: {
       href: '/assets/FS_QA_Certificate_of_Attendance_for_The_CSharp_Programming_Language_Start_Date_27012020_Ref_9180826.pdf',
-      text: 'Certificate',
-    },
-  },
-  {
-    date: '29 August 2018 - 30 August 2018',
-    location: 'Bristol, Uk',
-    title: 'Audio and Video Fundamentals for Engineers @ IABM',
-    content: (
-      <p>
-        This 2 day course builds your understanding of how images and sound are turned into audio and video signals then
-        passed along the end-to-end broadcast chain from acquisition through production distribution and delivery.
-      </p>
-    ),
-    reference: {
-      href: '/assets/FS_IABM_Audio_&_Video_Fundamentals_for_Engineers.pdf',
       text: 'Certificate',
     },
   },
@@ -379,40 +261,58 @@ export const education: TimelineItem[] = [
         Main exams: Algorithms and data structures, Databases, Software Engineering, Computer Networks, Programming
         Languages, Human-Computer Interaction, Web services.
       </p>
-    )
-  },
-  {
-    date: '2002 – 2007',
-    location: 'Bari, Italy',
-    title: 'Diploma in Commercial Technical @ ITC Marco Polo',
-    content: (
-      <p>
-        Computer use and operation, business management procedures, office automation, adoption of appropriate
-        communication techniques.
-      </p>
     ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
+    date: 'January 2024 – Present',
+    location: 'UK (Remote)',
+    title: 'Independent AI Engineer & Consultant | B2B Solutions',
+    content: (
+      <div className="flex flex-col gap-4">
+        <p>
+          Since early 2024, I have been designing and building advanced AI-driven architectures for B2B environments. I
+          developed <strong className="text-orange-500">Taylored CV</strong>, a complex{' '}
+          <strong className="text-orange-500">LangChain</strong> orchestration pipeline that dynamically tailors resumes
+          against job descriptions using <strong className="text-orange-500">parallel asyncio processing</strong> and
+          strict <strong className="text-orange-500">Pydantic structure definitions</strong>.
+        </p>
+        <p>
+          Simultaneously, I architected <strong className="text-orange-500">AutoEasy</strong>, an innovative Chrome
+          Extension and Node.js backend system utilizing <strong className="text-orange-500">Playwright</strong> and
+          local <strong className="text-orange-500">LLMs (Ollama)</strong> to autonomously handle complex UI
+          interactions. Beyond pure AI, my recent consulting encompasses full-stack architectural developments like the{' '}
+          <strong className="text-orange-500">GABS Booking System</strong>—a Flask and React application engineered to
+          bypass stateful authentication mechanisms—and asynchronous Python security scanners like{' '}
+          <strong className="text-orange-500">CyberChecker</strong>.
+        </p>
+      </div>
+    ),
+  },
+  {
     date: 'August 2023 – June 2025',
     location: 'Remote',
-    title: 'Quality Manager @ Coding Giants',
+    title: 'Software Engineering Manager & Head of Quality @ Coding Giants',
     content: (
-      <ul>
-        <li>● Establishing the Italian branch of Coding Giants, working directly with the founders and Italian Country Manager.</li>
-        <li>● Developing and implementing the quality management system, including the creation of a quality manual, procedures, and work instructions.</li>
-        <li>● Risks mitigation to ensure smooth operations.</li>
-        <li>● Ensuring compliance with all legal requirements and regulations.</li>
-        <li>● Created and managed the recruitment process, including job postings, interviews, onboarding and offboarding.</li>
-        <li>● Led the creation and development of a team of more than 70 team members.</li>
-        <li>● Tracking progress and task allocation with agile methodologies (SCRUM)</li>
-        <li>● Continuous improved of organizational processes, ensuring high service quality and KPI achievement.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Trello, Traffit, Teamtailor, Notion, Discord, DocuSign, CRM, Tableau, ProofHub, Gmail, Meet, Calendar, Drive, Docs, Sheets, Slides, Keep, Apps Script, Python
-        </li>
-      </ul>
+      <div className="flex flex-col gap-4">
+        <p>
+          At Coding Giants, I played a foundational role in establishing the Italian branch operations. Acting as a
+          strategic technical leader, I designed the core quality management ecosystem from the ground up, utilizing{' '}
+          <strong className="text-orange-500">Python-based analytical tracking systems</strong> to enforce compliance and
+          operational rigor. Over my tenure, I scaled and mentored a{' '}
+          <strong className="text-orange-500">cross-functional department of over 70 members</strong>.
+        </p>
+        <p>
+          My primary ethos centered unconditionally on eradicating manual dependencies. I engineered{' '}
+          <strong className="text-orange-500">Selenium</strong> and{' '}
+          <strong className="text-orange-500">Google Sheets API</strong> pipelines to fully automate teacher tracking and
+          transformed manual contract generation into an instantaneous{' '}
+          <strong className="text-orange-500">Python rendering flow</strong>, vastly improving organizational throughput
+          while adhering to strict Agile methodologies.
+        </p>
+      </div>
     ),
     reference: {
       href: '/assets/FS_CG_Reference_letter.pdf',
@@ -424,23 +324,24 @@ export const experience: TimelineItem[] = [
     location: 'Bristol, UK',
     title: 'Software Engineer @ Eurofins Digital Testing',
     content: (
-      <ul>
-        <li>● Designed and implemented test plans, automated and manual test cases, and test materials, including DASH-format media, for the broadband and broadcasting industry (HbbTv), serving clients such as BBC and Tivùsat.</li>
-        <li>● Developed and reviewed scripts, with expertise in code debugging and unit testing. Created tools for validation, verification, and integration.</li>
-        <li>● Led a team of 8 engineers and supported project management efforts, achieving a 40% reduction in delays
-          within the issue tracking system (Redmine).</li>
-        <li>● Managed audit requests and oversaw the '4K HDR Ultra HD' project for the certification requests for clients
-          such as LG, Hisense, and Panasonic.</li>
-        <li>● Developed features for a QA analyzer app in C# to process Interoperable Mastering Format (IMF) and Material
-          Exchange Format (MXF) media, supporting customers like HBO in validating content for Netflix publication and
-          enhancing the infrastructure with Shell and batch scripting.</li>
-        <li>● Worked with Windows and Linux servers, using DevOps tools for configuration and maintenance.</li>
-        <li>● Gained experience in the SDLC and CI, with agile methodologies (SCRUM).</li>
-        <li>● Conducted training sessions for new employees and provided ongoing support for junior team members.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Javascript, Python, C#, Pandas, ElementTree, Unittest, Selenium, YAML, GWT, Regex, XML, JSON, Jira, Jenkins, VSCode, SVN, Git, Postman, SoapUI, FFmpeg, MediaInfo, Video Encoding, DRM (PlayReady, Marlin, ClearKey, Widevine), Redmine.
-        </li>
-      </ul>
+      <div className="flex flex-col gap-4">
+        <p>
+          During my five years at Eurofins, I designed and deployed sophisticated{' '}
+          <strong className="text-orange-500">automated test plans</strong> validating HbbTV, DVB-T2, and next-generation
+          ATSC 3.0 frameworks, working closely with top-tier partners like the{' '}
+          <strong className="text-orange-500">BBC</strong> and Tivùsat.
+        </p>
+        <p>
+          On the back-end side, I engineered core{' '}
+          <strong className="text-orange-500">C# data processing components</strong> integrating into broader QA analyzer
+          suites to validate granular Interoperable Mastering Formats (IMF) used by customers like{' '}
+          <strong className="text-orange-500">HBO</strong> to guarantee{' '}
+          <strong className="text-orange-500">Netflix</strong> platform compliance. I authored expansive{' '}
+          <strong className="text-orange-500">Shell and Python automation pipelines</strong> that demonstrably increased
+          QA velocity by 20%, all whilst orchestrating the technical rollouts that allowed seamless remote deployment
+          telemetry during the pandemic lockdown.
+        </p>
+      </div>
     ),
   },
   {
@@ -448,17 +349,21 @@ export const experience: TimelineItem[] = [
     location: 'Rome, Italy',
     title: 'Cyber Security Analyst @ Deloitte',
     content: (
-      <ul>
-        <li>● Technical and functional analyst in Risk Advisory at Leonardo (client), focusing on GRC platform transformation and Cyber Security.</li>
-        <li>● Conducted risk assessments and implemented security measures, including the development of a security dashboard for the SOC.</li>
-        <li>● Worked with standards such as ISO/IEC 27001, NIST Cybersecurity Framework, COBIT, and ITIL.</li>
-        <li>● Translated functional requirements into technical specifications for smooth project execution.</li>
-        <li>● Created release manuals, trained clients, and managed work progress under tight deadlines in areas such as Cyber Defence, Cyber Resilience.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> RSA Archer, Javascript, jQuery, XSLT, CSS, XML, HTML, MS Excel, MS
-          PowerPoint.
-        </li>
-      </ul>
+      <div className="flex flex-col gap-4">
+        <p>
+          I operated within the Risk Advisory division serving as the principal Technical and Functional Analyst on a
+          major <strong className="text-orange-500">GRC transformation for Leonardo</strong>, a key player in aerospace
+          defense.
+        </p>
+        <p>
+          My focus involved architecting <strong className="text-orange-500">SOC integrations</strong> that aggregated
+          disjointed network endpoints through <strong className="text-orange-500">resilient REST APIs</strong> to
+          consolidate enterprise compliance. I was responsible for transforming rigorous business security matrices
+          aligning to <strong className="text-orange-500">ISO/IEC 27001</strong> and{' '}
+          <strong className="text-orange-500">NIST parameters</strong> into deeply detailed technical software
+          specifications for the engineering teams.
+        </p>
+      </div>
     ),
   },
   {
@@ -466,41 +371,16 @@ export const experience: TimelineItem[] = [
     location: 'Rome, Italy',
     title: 'Software Developer @ Capgemini',
     content: (
-      <ul>
-        <li>● Utilized Software AG products to develop IoT and Big Data solutions for Octo Telematics (client)</li>
-        <li>● Analyzed and managed applications for international telephone traffic interconnection and developing components for SMS routing and configuration for Telecom Italia Sparkle (client)</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Java, SOAP, REST, SQL, Oracle, Maven, Tomcat, Hibernate, CSS, HTML, IoT, Linux, SVN, EPL, Mongo, Virtualization.
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'July 2015 – October 2015',
-    location: 'Bari, Italy / Remote',
-    title: 'Project Leader @ La Scuola Open Source',
-    content: (
-      <ul>
-        <li>● Developed a custom tablet using selected electronic components, assembled and configured as an updated version of the 2014 prototype.</li>
-        <li>● The main feature includes the installation of Ubuntu OS with integrated development environments (IDEs) for Java and Python.</li>
-        <li>● Designed and developed project proposals, including budgets and critical paths.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Arduino, Raspberry Pi, IoT.
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'April 2015 – Jul 2015',
-    location: 'Valenzano (Bari), Italy',
-    title: 'Graduating student @ LaserInn',
-    content: (
-      <ul>
-        <li>● Thesis: development of a prototype for the acquisition of physiological signals and of an act software able to extract and recognize the human emotions.</li>
-        <li>
-          <b>Tools and Platforms Used:</b> Arduino, C, MATLAB, LaTeX, R, E-Health.
-        </li>
-      </ul>
+      <p>
+        My early trajectory in enterprise engineering was shaped at Capgemini, where I focused on high-throughput
+        backend architecture. I integrated robust{' '}
+        <strong className="text-orange-500">Java-based Big Data architectures</strong> to analyze massive streams from
+        Octo Telematics utilizing <strong className="text-orange-500">Esper EPL microservices</strong>. Concurrently, I
+        honed my foundational skills in infrastructure resilience by building highly scalable{' '}
+        <strong className="text-orange-500">REST backend services</strong> powering Telecom Italia Sparkle transit
+        gateways, strictly optimized to meet exacting SLA demands over{' '}
+        <strong className="text-orange-500">Oracle</strong> and <strong className="text-orange-500">Spring Boot</strong>.
+      </p>
     ),
   },
 ];
@@ -513,15 +393,11 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Pro Trainer, Coding Giants',
-      text: "Working with Francesco as my direct supervisor always resulted in quality work. I feel lucky to have had the opportunity to learn from his wealth of experience - he was able to bring both clarity and structure to the team while creating solid processes which are still in place today, because they work. More than the results, working alongside Francesco always felt easy and organic, and had a positive impact on my day-to-day work experience.",
+      text: 'Working with Francesco as my direct supervisor always resulted in quality work. I feel lucky to have had the opportunity to learn from his wealth of experience - he was able to bring both clarity and structure to the team while creating solid processes which are still in place today, because they work. More than the results, working alongside Francesco always felt easy and organic, and had a positive impact on my day-to-day work experience.',
     },
     {
       name: 'Pro Trainer, Coding Giants',
-      text: "Francesco and I worked together at Coding Giants, where he was my manager in charge of class coordination, materials, and workflows. From the very beginning, I appreciated his way of working: precise in assigning tasks, always clear about goals, and detail-oriented. He was always kind, approachable, and never too strict, yet perfectly capable of leading the team with balance and competence. Together, we always managed to find effective solutions to everyday problems, working in a collaborative and positive atmosphere. Francesco also succeeded in creating a great team environment within a rather large group (almost 70 people!) that wasn't always easy to manage. He's someone who is truly a pleasure to work and talk with, and I'm glad I had the chance to collaborate with him. I really hope we'll get to work together again in the future!",
-    },
-    {
-      name: 'Project Manager, Eurofins Digital Testing',
-      text: "Francesco's support has always been incredible helpful to me, and his recent support of PM for myself/test case team has massively helped my Jira Ticket accuracy and discipline.",
+      text: "Francesco and I worked together at Coding Giants, where he was my manager. From the very beginning, I appreciated his way of working: precise in assigning tasks, always clear about goals, and detail-oriented. Perfectly capable of leading the team with balance and competence. Together, we always managed to find effective solutions to everyday problems, working in a collaborative and positive atmosphere. Francesco also succeeded in creating a great team environment within a rather large group (almost 70 people!) that wasn't always easy to manage.",
     },
     {
       name: 'Practice Lead, Eurofins Digital Testing',
@@ -529,7 +405,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Senior Software Architect, Eurofins Digital Testing',
-      text: 'All the trainings you have given to me has been very helpful. You have given a great start to our training. During the initial Ligada setup, we have encountered few problem, and you have resolved almost all the issue. I have taken notice of your problem solving skills. Your approach for solving problem is very systematic, calm and focused. I really like your thinking process for tackling problems.',
+      text: 'All the trainings you have given to me has been very helpful. You have given a great start to our training. During the initial Ligada setup, we have encountered few problems, and you have resolved almost all the issue. I have taken notice of your problem solving skills. Your approach for solving problem is very systematic, calm and focused. I really like your thinking process for tackling problems.',
     },
     {
       name: 'Graduate Software Engineer, Eurofins Digital Testing',
@@ -538,10 +414,6 @@ export const testimonial: TestimonialSection = {
     {
       name: 'Cyber Security Analyst, Deloitte',
       text: 'I had the opportunity to work with Francesco for several months. He is a hard worker and an excellent team mate. He has strong technical skills and he is always willing to support the team in any moment (even under pressure or with strict deadlines approaching). He is not only a brilliant professional but also (and most important) a kind and honest person. I really enjoyed working with him and I somehow hope to meet him again in the future.',
-    },
-    {
-      name: 'Software Engineer, LaserInn',
-      text: 'Francesco worked on his thesis in close collaboration with me and my colleagues. At that time, I was able to appreciate his autonomy and his resourcefulness. He demonstrated excellent organizational skills. He has also shown that he is able to integrate himself into a context of professionals. In the last period of his work, Francesco actively proposed himself in the development team of the project to which we worked together. I keep a good memory of those months and it would be a pleasure for me if we could work together again.',
     },
   ],
 };
@@ -553,7 +425,7 @@ export const testimonial: TestimonialSection = {
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description:
-    'Open to IT Project Management opportunities, with a focus on driving innovative projects that combine software development and AI. Also available for consulting on automation and AI integration to enhance business efficiency.',
+    'Open to Software Engineering Management and Lead AI Engineer opportunities, with a focus on architecting autonomous systems and empowering cross-functional teams to deliver highly scalable B2B solutions.',
   items: [
     {
       type: ContactType.Email,
