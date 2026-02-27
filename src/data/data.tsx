@@ -75,7 +75,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/FS_Senior_Python_AI_Engineer.pdf',
+      href: '/assets/FS_Software_Engineer.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
