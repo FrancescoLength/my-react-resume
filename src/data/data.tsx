@@ -164,7 +164,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'GABS (Gym Automatic Booking System)',
     description:
       'A full-stack architecture featuring a custom Python/Flask API backend and a Vite+React.js frontend, deployed securely via Docker and systemd on edge hardware. Uses Selenium for headless browser interactions to bypass complex auth mechanisms and automate high-traffic bookings.',
-    url: 'https://github.com/FrancescoLength/GABS',
+    url: 'https://github.com/FrancescoLength/gabs-client-react',
     image: porfolioImage10,
   },
   {
