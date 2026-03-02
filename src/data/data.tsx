@@ -150,14 +150,14 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Taylored CV: CI/CD Pipeline for Autonomous LLM Resumes',
     description:
       'Developed an advanced LangChain pipeline utilizing asyncio and parallel execution to automatically tailor CVs and Cover Letters against precise job descriptions. Supports both cloud (Gemini) and local LLMs (Ollama/Qwen) with strict Pydantic structured schema outputs for ATS optimization.',
-    url: 'https://github.com/FrancescoLength/Taylored_cv',
+    url: 'https://github.com/FrancescoLength/taylored-cv-showcase',
     image: porfolioImage1,
   },
   {
     title: 'AutoEasy: Intelligent Job Application RPA',
     description:
       'A custom Architecture comprising a Chrome Extension paired with Node.js backend integrating Playwright with Local LLMs to autonomously interpret complex job application DOM forms, inject candidate context, and execute one-click submissions on platforms like LinkedIn.',
-    url: 'https://github.com/FrancescoLength/',
+    url: 'https://github.com/FrancescoLength/autoeasy-showcase',
     image: porfolioImage2,
   },
   {
@@ -171,7 +171,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'CyberChecker: Security Posture Evaluator',
     description:
       'Engineered a security scanner pipeline combining massive regex-pattern detection, Shannon entropy analysis, ProjectDiscovery Katana integration for deep crawling, and interactive Selenium rendering to identify exposure vulnerabilities in complex Single Page Applications.',
-    url: 'https://github.com/FrancescoLength/',
+    url: 'https://github.com/FrancescoLength/cyberchecker-showcase',
     image: porfolioImage4,
   },
 ];
