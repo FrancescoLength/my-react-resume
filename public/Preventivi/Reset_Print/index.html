@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preventivo E-Commerce — Reset Print × LengoCorp</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #09112B;
+    --navy-mid: #131d3d;
+    --gold: #C8A96E;
+    --gold-light: #e8cfa0;
+    --cream: #FAFAF6;
+    --warm-white: #F4F3EE;
+    --text: #1C1C2E;
+    --text-muted: #6B6B85;
+    --border: #E2E0D8;
+    --green: #2D7A5F;
+    --green-light: #EBF5F0;
+    --red-light: #FDF0F0;
+    --red: #C0392B;
+    --section-gap: 64px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--navy);
+    color: #fff;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-texture {
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(200,169,110,0.12) 0%, transparent 70%),
+      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px),
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px);
+    pointer-events: none;
+  }
+
+  .header-inner {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 52px 48px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .logo-block { display: flex; align-items: center; gap: 14px; }
+
+  .logo-hex {
+    width: 60px; height: 48px; flex-shrink: 0;
+  }
+
+  .logo-name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .logo-sub {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  .header-meta { text-align: right; }
+  .doc-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .doc-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 2px;
+  }
+  .doc-validity {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .header-hero {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 48px 56px;
+  }
+
+  .for-label {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  h1 em { color: var(--gold); font-style: italic; }
+
+  .header-tagline {
+    font-size: 15px;
+    color: rgba(255,255,255,0.55);
+    margin-top: 16px;
+    max-width: 520px;
+    line-height: 1.6;
+  }
+
+  .header-divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 24px 0 0;
+  }
+
+  .header-pills {
+    display: flex; gap: 10px; flex-wrap: wrap; padding-top: 24px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 100px;
+    padding: 5px 14px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    font-weight: 400;
+  }
+  .pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+  /* ── LAYOUT ── */
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 48px 80px;
+  }
+
+  /* ── SECTION ── */
+  .section {
+    margin-top: var(--section-gap);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    flex-shrink: 0;
+    padding-top: 3px;
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.2;
+  }
+
+  /* ── INTRO BLOCK ── */
+  .intro-card {
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 36px 40px;
+    color: #fff;
+    margin-top: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .intro-card::before {
+    content: '';
+    position: absolute;
+    right: -40px; top: -40px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,169,110,0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .intro-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .intro-card p:last-child { margin-bottom: 0; }
+  .intro-card strong { color: var(--gold-light); font-weight: 500; }
+
+  /* ── OBJECTIVES ── */
+  .obj-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 14px;
+  }
+  .obj-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .obj-item:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.07); transform: translateY(-2px); }
+  .obj-icon {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: var(--navy);
+    color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+  }
+  .obj-text { font-size: 13.5px; line-height: 1.5; color: var(--text); }
+
+  /* ── TABLE ── */
+  .styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .styled-table th {
+    background: var(--navy);
+    color: var(--gold-light);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    text-align: left;
+  }
+  .styled-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--border);
+    background: #fff;
+  }
+  .styled-table tr:last-child td { border-bottom: none; }
+  .styled-table tr:nth-child(even) td { background: var(--warm-white); }
+
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+  }
+  .tag-static { background: #EEF2FF; color: #4F46E5; }
+  .tag-dynamic { background: #FFF7ED; color: #C2410C; }
+  .tag-isr { background: #F0FDF4; color: #15803D; }
+
+  /* ── USER PROFILES ── */
+  .profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .profile-card {
+    border-radius: 12px;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .profile-b2c { background: #EEF6FF; border: 1px solid #BFD9F5; }
+  .profile-comm { background: #FFF9EE; border: 1px solid #F5DFA0; }
+  .profile-b2b { background: #F0F9F4; border: 1px solid #A8D9BC; }
+
+  .profile-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .profile-b2c .profile-label { color: #2563EB; }
+  .profile-comm .profile-label { color: #D97706; }
+  .profile-b2b .profile-label { color: #16A34A; }
+
+  .profile-title { font-weight: 600; font-size: 17px; margin-bottom: 10px; }
+  .profile-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  .profile-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 11px; font-weight: 500;
+    margin-top: 14px;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+  .profile-b2c .profile-badge { background: rgba(37,99,235,0.1); color: #1D4ED8; }
+  .profile-comm .profile-badge { background: rgba(217,119,6,0.1); color: #B45309; }
+  .profile-b2b .profile-badge { background: rgba(22,163,74,0.1); color: #166534; }
+
+  /* ── CONFIGURATOR ── */
+  .config-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .config-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 16px 18px;
+    display: flex; align-items: flex-start; gap: 12px;
+  }
+  .config-icon { font-size: 20px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+  .config-name { font-size: 13.5px; font-weight: 500; margin-bottom: 3px; }
+  .config-desc { font-size: 12px; color: var(--text-muted); }
+
+  /* ── PAYMENTS ── */
+  .pay-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  }
+  .pay-group h3 {
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 600; color: var(--text-muted); margin-bottom: 12px;
+  }
+  .pay-list { display: flex; flex-direction: column; gap: 8px; }
+  .pay-item {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 8px; padding: 12px 16px;
+    display: flex; align-items: center; gap: 10px;
+    font-size: 14px;
+  }
+  .pay-item span:first-child { font-size: 18px; }
+
+  /* ── ACTIVITIES ── */
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .act-group {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 22px;
+  }
+  .act-group-title {
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 600; color: var(--navy); margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .act-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); flex-shrink:0; }
+  .act-items { display: flex; flex-direction: column; gap: 8px; }
+  .act-item {
+    display: flex; align-items: flex-start; gap: 9px;
+    font-size: 13.5px; line-height: 1.4;
+  }
+  .act-check { color: var(--green); flex-shrink: 0; margin-top: 2px; font-size: 13px; }
+
+  /* ── EXCLUSIONS ── */
+  .excl-list {
+    background: var(--red-light);
+    border: 1px solid #FAD5D0;
+    border-radius: 10px;
+    padding: 24px 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px 24px;
+  }
+  .excl-item {
+    display: flex; align-items: flex-start; gap: 9px;
+    font-size: 13.5px; line-height: 1.4;
+    color: #7B2D2D;
+  }
+  .excl-x { color: var(--red); flex-shrink: 0; font-size: 13px; margin-top: 2px; }
+  .excl-note {
+    margin-top: 18px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #7B2D2D;
+    border: 1px solid rgba(192,57,43,0.15);
+  }
+
+  /* ── TIMELINE ── */
+  .timeline-bar {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px 36px;
+  }
+  .timeline-weeks {
+    display: flex; gap: 0; margin-bottom: 12px;
+  }
+  .week-block {
+    flex: 1;
+    height: 8px;
+    background: var(--warm-white);
+    border-right: 2px solid var(--cream);
+  }
+  .week-block:first-child { border-radius: 100px 0 0 100px; }
+  .week-block:last-child { border-radius: 0 100px 100px 0; border-right: none; }
+  .week-block.active { background: var(--gold); }
+  .timeline-labels {
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: var(--text-muted);
+    font-family: 'DM Mono', monospace;
+    margin-bottom: 20px;
+  }
+  .timeline-factors { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .tf {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+  .tf strong { color: var(--navy); font-weight: 600; }
+  .tf span { color: var(--text-muted); }
+
+  /* ── PRICING ── */
+  .pricing-hero {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 48px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing-hero::before {
+    content: '';
+    position: absolute;
+    right: -80px; bottom: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,169,110,0.15) 0%, transparent 70%);
+  }
+  .pricing-label {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500; margin-bottom: 8px;
+  }
+  .pricing-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 600; color: #fff; margin-bottom: 12px;
+  }
+  .pricing-desc { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; max-width: 460px; }
+  .pricing-amount {
+    text-align: right;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .pricing-iva { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.1em; margin-bottom: 6px; }
+  .price-big {
+    font-family: 'Playfair Display', serif;
+    font-size: 54px; font-weight: 700;
+    color: var(--gold); line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .price-big sup { font-size: 24px; vertical-align: top; margin-top: 8px; }
+
+  .pricing-terms {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-top: 20px;
+  }
+  .pt-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .pt-icon { font-size: 22px; flex-shrink: 0; }
+  .pt-title { font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+  .pt-desc { font-size: 13px; color: var(--text-muted); line-height: 1.4; }
+
+  /* ── RECURRING COSTS ── */
+  .costs-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .costs-table th {
+    background: var(--warm-white);
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted); font-weight: 600;
+    padding: 11px 18px; text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  .costs-table td { padding: 12px 18px; background: #fff; border-bottom: 1px solid var(--border); }
+  .costs-table tr:last-child td { border-bottom: none; background: var(--navy); color: var(--gold-light); font-weight: 600; font-size: 14.5px; }
+  .costs-table tr:nth-child(even) td { background: var(--warm-white); }
+  .costs-table tr:last-child td:last-child { color: var(--gold); }
+  .free-badge {
+    display: inline-block;
+    background: var(--green-light);
+    color: var(--green);
+    font-size: 11px; font-weight: 600;
+    padding: 2px 8px; border-radius: 100px;
+  }
+
+  /* ── AUTOMATIONS ── */
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .auto-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 18px 20px;
+    display: flex; gap: 12px; align-items: flex-start;
+  }
+  .auto-arrow {
+    font-size: 16px; flex-shrink: 0;
+    color: var(--gold); margin-top: 1px;
+  }
+  .auto-text { font-size: 13.5px; line-height: 1.5; }
+  .auto-text strong { font-weight: 600; color: var(--navy); }
+  .auto-tools {
+    margin-top: 20px;
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    font-size: 13.5px;
+    color: var(--text-muted);
+    display: flex; align-items: center; gap: 10px;
+    flex-wrap: wrap;
+  }
+  .auto-tools strong { color: var(--text); font-weight: 600; }
+  .tool-chip {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--navy);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── COMPARISON TABLE ── */
+  .compare-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 13.5px;
+  }
+  .compare-table th {
+    padding: 16px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    position: sticky; top: 0;
+  }
+  .compare-table th:first-child {
+    background: var(--warm-white);
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 200px;
+  }
+  .compare-table th.col-wp {
+    background: #F5F5F5;
+    color: #666;
+  }
+  .compare-table th.col-lc {
+    background: var(--navy);
+    color: var(--gold-light);
+  }
+  .compare-table td {
+    padding: 13px 20px;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    background: #fff;
+    vertical-align: middle;
+  }
+  .compare-table td:last-child { border-right: none; }
+  .compare-table td.lc-col { background: #FAFAF2; }
+  .compare-table tr:last-child td { border-bottom: none; background: var(--navy); color: var(--gold-light); font-weight: 600; }
+  .compare-table tr:last-child td.lc-col { background: rgba(200,169,110,0.15); color: var(--gold); }
+  .compare-table tr:nth-child(even) td { background: var(--warm-white); }
+  .compare-table tr:nth-child(even) td.lc-col { background: #F5F4EB; }
+  .check-green { color: var(--green); }
+  .check-red { color: var(--red); }
+
+  /* ── MAINTENANCE ── */
+  .maint-card {
+    background: linear-gradient(135deg, #FAFAF2 0%, #FFF9EC 100%);
+    border: 1px solid #E8D8A0;
+    border-radius: 12px;
+    padding: 32px 36px;
+    display: flex; gap: 24px; align-items: flex-start;
+  }
+  .maint-icon { font-size: 36px; flex-shrink: 0; }
+  .maint-title { font-weight: 600; font-size: 17px; margin-bottom: 8px; color: var(--navy); }
+  .maint-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+  .maint-items { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .maint-tag {
+    background: rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.3);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 12.5px;
+    color: #7A5F1E;
+    font-weight: 500;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    padding: 32px 48px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .footer-logo { display: flex; align-items: center; gap: 10px; }
+  .footer-brand { font-weight: 600; color: #fff; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+  footer a { color: var(--gold); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* ── PRINT ── */
+  @media print {
+    body { background: #fff; }
+    header { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .page { padding: 0 24px; }
+    .pricing-hero { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .section { page-break-inside: avoid; }
+    footer { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  }
+
+  @media (max-width: 680px) {
+    .header-inner { flex-direction: column; padding: 32px 24px 24px; }
+    .header-meta { text-align: left; }
+    .header-hero { padding: 0 24px 40px; }
+    .page { padding: 0 24px 60px; }
+    .profiles-grid { grid-template-columns: 1fr; }
+    .pay-grid { grid-template-columns: 1fr; }
+    .pricing-hero { grid-template-columns: 1fr; }
+    .pricing-amount { text-align: left; }
+    .pricing-terms { grid-template-columns: 1fr; }
+    footer { flex-direction: column; padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="header-texture"></div>
+  <div class="header-inner">
+    <div class="logo-block">
+      <img src="/Preventivi/Reset_Print/logo.svg" class="logo-hex" alt="LengoCorp logo">
+      <div>
+        <div class="logo-name">LengoCorp</div>
+        <div class="logo-sub">B2B Solutions</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="doc-label">Documento Riservato</div>
+      <div class="doc-title">Preventivo N° 2026-001</div>
+      <div class="doc-validity">Valido fino al 10 aprile 2026</div>
+    </div>
+  </div>
+  <div class="header-hero">
+    <div class="for-label">Proposta per</div>
+    <h1>E-Commerce <em>Reset Print</em></h1>
+    <p class="header-tagline">
+      Soluzione Next.js + Sanity CMS per la vendita online di stampa personalizzata —
+      scalabile, performante, pronta per le automazioni.
+    </p>
+    <hr class="header-divider">
+    <div class="header-pills">
+      <span class="pill"><span class="pill-dot"></span>Next.js 14 + Sanity CMS</span>
+      <span class="pill"><span class="pill-dot"></span>Supabase + Stripe</span>
+      <span class="pill"><span class="pill-dot"></span>3 profili utente</span>
+      <span class="pill"><span class="pill-dot"></span>20 prodotti configurabili</span>
+      <span class="pill"><span class="pill-dot"></span>4–8 settimane</span>
+      <span class="pill"><span class="pill-dot"></span>25 marzo 2026</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- ── PRESENTAZIONE ── -->
+  <div class="intro-card" style="margin-top: 48px;">
+    <p>Proposta per la realizzazione di un sito e-commerce moderno per <strong>Reset Print</strong>, azienda specializzata in stampa online personalizzata.</p>
+    <p>La soluzione è costruita su <strong>Next.js + Sanity CMS</strong>, garantendo prestazioni eccellenti, piena proprietà del codice e costi di gestione annuali minimi rispetto alle soluzioni WordPress tradizionali.</p>
+    <p>L'architettura è progettata per essere <strong>scalabile e aperta alle automazioni</strong>: ogni componente espone API standard e webhook nativi, rendendo possibile l'integrazione futura con gestionali, ERP, CRM e workflow — senza dover riscrivere il sito.</p>
+  </div>
+
+  <!-- ── 1. OBIETTIVI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2>Obiettivo del Progetto</h2>
+    </div>
+    <div class="obj-list">
+      <div class="obj-item">
+        <div class="obj-icon">🏪</div>
+        <div class="obj-text">Presentare l'azienda e i servizi di stampa personalizzata online</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-icon">🛒</div>
+        <div class="obj-text">Vendere online prodotti configurabili con upload file e opzioni personalizzate</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-icon">👥</div>
+        <div class="obj-text">Gestire <strong>3 profili utente</strong> con listini differenziati (B2C, Commerciale, B2B)</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-icon">⚙️</div>
+        <div class="obj-text">Pannello intuitivo per gestire prodotti e ordini in autonomia</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-icon">📈</div>
+        <div class="obj-text">Struttura predisposta per la crescita futura B2B e B2C</div>
+      </div>
+      <div class="obj-item">
+        <div class="obj-icon">🔌</div>
+        <div class="obj-text">Base tecnologica pronta per automazioni con gestionali, ERP e CRM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 2. STRUTTURA ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2>Struttura del Sito</h2>
+    </div>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Pagina</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Home</td><td><span class="tag tag-static">Statica</span></td></tr>
+        <tr><td>Chi siamo</td><td><span class="tag tag-static">Statica</span></td></tr>
+        <tr><td>Contatti</td><td><span class="tag tag-static">Statica</span></td></tr>
+        <tr><td>Lavora con noi</td><td><span class="tag tag-static">Statica</span></td></tr>
+        <tr><td>Shop (catalogo)</td><td><span class="tag tag-isr">Statica / ISR</span></td></tr>
+        <tr><td>Template categoria</td><td><span class="tag tag-isr">Statica / ISR</span></td></tr>
+        <tr><td>Template prodotto + configuratore</td><td><span class="tag tag-isr">Statica / ISR</span></td></tr>
+        <tr><td>Carrello</td><td><span class="tag tag-dynamic">Dinamica</span></td></tr>
+        <tr><td>Checkout</td><td><span class="tag tag-dynamic">Dinamica</span></td></tr>
+        <tr><td>Area riservata cliente</td><td><span class="tag tag-dynamic">Dinamica</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ── 3. UTENTI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2>Gestione Utenti e Listini Differenziati</h2>
+    </div>
+    <div class="profiles-grid">
+      <div class="profile-card profile-b2c">
+        <div class="profile-label">Profilo 1</div>
+        <div class="profile-title">B2C</div>
+        <div class="profile-desc">Accesso pubblico. Prezzi standard visibili a tutti senza necessità di registrazione.</div>
+        <div class="profile-badge">🌐 Accesso libero</div>
+      </div>
+      <div class="profile-card profile-comm">
+        <div class="profile-label">Profilo 2</div>
+        <div class="profile-title">Commerciale</div>
+        <div class="profile-desc">Accesso tramite login. Listino dedicato riservato ai clienti commerciali.</div>
+        <div class="profile-badge">🔑 Login richiesto</div>
+      </div>
+      <div class="profile-card profile-b2b">
+        <div class="profile-label">Profilo 3</div>
+        <div class="profile-title">B2B</div>
+        <div class="profile-desc">Accesso tramite login. Listino business riservato con prezzi dedicati.</div>
+        <div class="profile-badge">🏢 Login richiesto</div>
+      </div>
+    </div>
+    <p style="margin-top:16px; font-size:13px; color:var(--text-muted); background:var(--warm-white); padding:12px 16px; border-radius:8px; border-left:3px solid var(--gold);">
+      I prezzi vengono sempre calcolati <strong>lato server</strong> — nessun rischio di manipolazione o esposizione di listini non autorizzati. La gestione dei ruoli avviene tramite il pannello Supabase: il cliente può abilitare/modificare gli utenti in autonomia in pochi clic.
+    </p>
+  </div>
+
+  <!-- ── 4. CONFIGURATORE ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2>Configurazione Prodotti Personalizzabili</h2>
+    </div>
+    <div class="config-grid">
+      <div class="config-item">
+        <div class="config-icon">✏️</div>
+        <div><div class="config-name">Campi testo</div><div class="config-desc">Testo da stampare, personalizzazioni libere</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">📁</div>
+        <div><div class="config-name">Upload file</div><div class="config-desc">Loghi, immagini, PDF alta risoluzione</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">🔘</div>
+        <div><div class="config-name">Opzioni multiple</div><div class="config-desc">Formato, materiale, finitura</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">📋</div>
+        <div><div class="config-name">Menu a tendina</div><div class="config-desc">Selezione guidata con opzioni predefinite</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">💶</div>
+        <div><div class="config-name">Maggiorazioni prezzo</div><div class="config-desc">Opzioni con variazione automatica del totale</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">⚠️</div>
+        <div><div class="config-name">Campi obbligatori</div><div class="config-desc">Validazione prima del carrello</div></div>
+      </div>
+    </div>
+    <p style="margin-top:14px; font-size:13px; color:var(--text-muted); background:var(--green-light); padding:12px 16px; border-radius:8px; border-left:3px solid var(--green);">
+      <strong>Incluso:</strong> inserimento e configurazione di max 20 prodotti pilota. Il calcolo del prezzo finale (incluse le maggiorazioni) avviene sempre server-side, prima della creazione della sessione di pagamento — non è manipolabile dal browser.
+    </p>
+  </div>
+
+  <!-- ── 5. PAGAMENTI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2>Spedizioni e Pagamenti</h2>
+    </div>
+    <div class="pay-grid">
+      <div class="pay-group">
+        <h3>🚚 Metodi di spedizione</h3>
+        <div class="pay-list">
+          <div class="pay-item"><span>📦</span><span>Spedizione standard</span></div>
+          <div class="pay-item"><span>🏢</span><span>Ritiro in sede</span></div>
+        </div>
+      </div>
+      <div class="pay-group">
+        <h3>💳 Metodi di pagamento</h3>
+        <div class="pay-list">
+          <div class="pay-item"><span>💳</span><span>Carta di credito / debito (Stripe)</span></div>
+          <div class="pay-item"><span>🅿️</span><span>PayPal (tramite Stripe)</span></div>
+          <div class="pay-item"><span>🏦</span><span>Bonifico bancario</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 7. DESIGN ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2>Design e UX</h2>
+    </div>
+    <div class="config-grid">
+      <div class="config-item">
+        <div class="config-icon">🎨</div>
+        <div><div class="config-name">Grafica personalizzata</div><div class="config-desc">Sviluppo coerente con l'identità di Reset Print</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">📱</div>
+        <div><div class="config-name">Responsive</div><div class="config-desc">Desktop, tablet e mobile ottimizzati</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">🛍️</div>
+        <div><div class="config-name">UX e-commerce</div><div class="config-desc">Ottimizzazione catalogo e configuratore</div></div>
+      </div>
+      <div class="config-item">
+        <div class="config-icon">🔍</div>
+        <div><div class="config-name">SEO Tecnica</div><div class="config-desc">Meta tag, sitemap.xml, structured data</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 9. ATTIVITÀ ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2>Attività Comprese nel Progetto</h2>
+    </div>
+    <div class="activities-grid">
+      <div class="act-group">
+        <div class="act-group-title"><span class="act-dot"></span>Setup Tecnico</div>
+        <div class="act-items">
+          <div class="act-item"><span class="act-check">✓</span>Next.js 14, Supabase, Sanity, Stripe, Vercel</div>
+          <div class="act-item"><span class="act-check">✓</span>Cloudflare R2, Resend</div>
+          <div class="act-item"><span class="act-check">✓</span>Struttura database (utenti, ordini, ruoli)</div>
+          <div class="act-item"><span class="act-check">✓</span>Autenticazione e gestione ruoli</div>
+        </div>
+      </div>
+      <div class="act-group">
+        <div class="act-group-title"><span class="act-dot"></span>Sviluppo</div>
+        <div class="act-items">
+          <div class="act-item"><span class="act-check">✓</span>Tutte le pagine previste</div>
+          <div class="act-item"><span class="act-check">✓</span>Configuratore prodotto + upload file</div>
+          <div class="act-item"><span class="act-check">✓</span>Carrello e checkout completo</div>
+          <div class="act-item"><span class="act-check">✓</span>Area riservata cliente</div>
+          <div class="act-item"><span class="act-check">✓</span>Email transazionali (ordine, spedizione, admin)</div>
+        </div>
+      </div>
+      <div class="act-group">
+        <div class="act-group-title"><span class="act-dot"></span>Contenuti & SEO</div>
+        <div class="act-items">
+          <div class="act-item"><span class="act-check">✓</span>Impaginazione contenuti forniti dal cliente</div>
+          <div class="act-item"><span class="act-check">✓</span>Moduli di contatto</div>
+          <div class="act-item"><span class="act-check">✓</span>SEO tecnica base (meta, sitemap, schema)</div>
+          <div class="act-item"><span class="act-check">✓</span>Max 20 prodotti pilota inseriti</div>
+        </div>
+      </div>
+      <div class="act-group">
+        <div class="act-group-title"><span class="act-dot"></span>Test & Go-live</div>
+        <div class="act-items">
+          <div class="act-item"><span class="act-check">✓</span>Banner cookie CookieYes (GDPR)</div>
+          <div class="act-item"><span class="act-check">✓</span>Test navigazione, checkout, login</div>
+          <div class="act-item"><span class="act-check">✓</span>Test ruoli utente e listini</div>
+          <div class="act-item"><span class="act-check">✓</span>Pubblicazione con dominio configurato</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 10. ESCLUSE ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2>Attività Escluse (Fase 1)</h2>
+    </div>
+    <div class="excl-list">
+      <div class="excl-item"><span class="excl-x">✕</span>Copywriting completo dei testi</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Shooting fotografico / contenuti grafici</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Caricamento massivo prodotti oltre i 20</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Documenti legali (Privacy Policy, T&C)</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Traduzioni multilingua</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Automazioni ERP / gestionale / CRM</div>
+      <div class="excl-item"><span class="excl-x">✕</span>SEO avanzata / campagne advertising</div>
+      <div class="excl-item"><span class="excl-x">✕</span>Manutenzione continuativa post-lancio</div>
+    </div>
+    <div class="excl-note" style="margin-top:14px;">
+      💡 <strong>Nota:</strong> Le automazioni ERP/CRM sono escluse dalla fase 1 — l'architettura è già predisposta. Documenti legali: consigliato Iubenda ~€27/anno. Molte attività possono essere aggiunte come servizi separati.
+    </div>
+  </div>
+
+  <!-- ── 11. TEMPI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h2>Tempi di Realizzazione</h2>
+    </div>
+    <div class="timeline-bar">
+      <div style="font-size:13px; color:var(--text-muted); margin-bottom:16px; font-weight:500;">Stima: <strong style="color:var(--navy); font-size:16px;">4 – 8 settimane</strong> dall'inizio del progetto</div>
+      <div class="timeline-weeks">
+        <div class="week-block active"></div>
+        <div class="week-block active"></div>
+        <div class="week-block active"></div>
+        <div class="week-block active"></div>
+        <div class="week-block"></div>
+        <div class="week-block"></div>
+        <div class="week-block"></div>
+        <div class="week-block"></div>
+      </div>
+      <div class="timeline-labels">
+        <span>Inizio</span>
+        <span>Sett. 4</span>
+        <span>Sett. 8</span>
+      </div>
+      <div style="font-size:13px; color:var(--text-muted);">I tempi dipendono da:</div>
+      <div class="timeline-factors">
+        <div class="tf"><strong>📦 Materiali</strong> <span>— Velocità di consegna testi, loghi, immagini</span></div>
+        <div class="tf"><strong>🛍️ Prodotti</strong> <span>— Numero e complessità dei listini</span></div>
+        <div class="tf"><strong>🎨 Revisioni</strong> <span>— Feedback grafici e approvazioni</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 12. PREZZO ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2>Proposta Economica</h2>
+    </div>
+    <div class="pricing-hero">
+      <div>
+        <div class="pricing-label">Sviluppo completo</div>
+        <div class="pricing-name">Sito E-Commerce Reset Print</div>
+        <div class="pricing-desc">
+          Next.js 14 · Sanity CMS · Supabase · Stripe · 3 listini · 20 prodotti · Configuratore · Email transazionali · SEO tecnica · Test e go-live
+        </div>
+      </div>
+      <div class="pricing-amount">
+        <div class="pricing-iva">IVA ESCLUSA</div>
+        <div class="price-big"><sup>€</sup>2.500</div>
+      </div>
+    </div>
+    <div class="pricing-terms">
+      <div class="pt-card">
+        <div class="pt-icon">🏦</div>
+        <div>
+          <div class="pt-title">Metodo di pagamento</div>
+          <div class="pt-desc">Bonifico bancario previa fattura</div>
+        </div>
+      </div>
+      <div class="pt-card">
+        <div class="pt-icon">📅</div>
+        <div>
+          <div class="pt-title">Scadenza preventivo</div>
+          <div class="pt-desc">Valido fino al <strong>10 aprile 2026</strong></div>
+        </div>
+      </div>
+      <div class="pt-card">
+        <div class="pt-icon">✍️</div>
+        <div>
+          <div class="pt-title">Acconto</div>
+          <div class="pt-desc"><strong>50%</strong> alla firma del contratto</div>
+        </div>
+      </div>
+      <div class="pt-card">
+        <div class="pt-icon">🚀</div>
+        <div>
+          <div class="pt-title">Saldo</div>
+          <div class="pt-desc"><strong>50%</strong> alla consegna e approvazione finale</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 13. COSTI RICORRENTI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2>Costi Ricorrenti (gestiti dal cliente)</h2>
+    </div>
+    <table class="costs-table">
+      <thead>
+        <tr>
+          <th>Servizio</th>
+          <th>Costo mensile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Vercel Pro (hosting + CDN)</td><td>~€19/mese</td></tr>
+        <tr><td>Supabase (database + auth)</td><td><span class="free-badge">€0 — piano free</span></td></tr>
+        <tr><td>Sanity CMS (fino a 3 admin)</td><td><span class="free-badge">€0 — piano free</span></td></tr>
+        <tr><td>Cloudflare R2 (fino a 10GB/mese)</td><td><span class="free-badge">€0 — incluso</span></td></tr>
+        <tr><td>Resend (fino a 3.000 email/mese)</td><td><span class="free-badge">€0 — piano free</span></td></tr>
+        <tr><td>Stripe · 1.5% + €0.25 per transazione EU</td><td>% sul fatturato</td></tr>
+        <tr><td><strong>Totale fisso mensile</strong></td><td>~€19/mese (~€230/anno)</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:12px; font-size:13px; color:var(--text-muted); padding:10px 14px; background:var(--warm-white); border-radius:8px;">
+      <strong>Nota Stripe:</strong> la commissione è nel flusso di vendita — a €100 di ordine, la commissione è circa €1.75. Non è un costo fisso. Nessun plugin da rinnovare annualmente. Nessun costo nascosto.
+    </p>
+  </div>
+
+  <!-- ── 14. AUTOMAZIONI ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h2>Scalabilità e Automazioni Future</h2>
+    </div>
+    <p style="font-size:14px; color:var(--text-muted); margin-bottom:20px; line-height:1.7;">
+      Ogni servizio espone API standard o webhook nativi, pronti ad essere collegati a sistemi esterni quando l'azienda ne avrà bisogno — <strong>senza riscrivere il sito</strong>.
+    </p>
+    <div class="auto-grid">
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>Nuovo ordine ricevuto</strong> → notifica automatica al reparto produzione (email, Slack, SMS)</div>
+      </div>
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>Pagamento confermato</strong> → creazione automatica fattura in Fatture in Cloud / Danea</div>
+      </div>
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>Aggiornamento stato ordine</strong> → notifica automatica al cliente via email o WhatsApp</div>
+      </div>
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>Nuovo utente B2B</strong> → alert al commerciale + apertura scheda in CRM</div>
+      </div>
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>Export ordini giornaliero</strong> → sincronizzazione con il gestionale aziendale</div>
+      </div>
+      <div class="auto-item">
+        <div class="auto-arrow">→</div>
+        <div class="auto-text"><strong>File di stampa ricevuto</strong> → notifica automatica al reparto prepress</div>
+      </div>
+    </div>
+    <div class="auto-tools">
+      <strong>Strumenti attivabili:</strong>
+      <span class="tool-chip">n8n</span>
+      <span class="tool-chip">Make</span>
+      <span class="tool-chip">Zapier</span>
+      collegati direttamente ai webhook di Supabase, Stripe e agli endpoint del sito — senza costi aggiuntivi di infrastruttura.
+    </div>
+  </div>
+
+  <!-- ── CONFRONTO ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">13</span>
+      <h2>Perché questa soluzione</h2>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-wp">Agenzia WordPress</th>
+            <th class="col-lc">Questa proposta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Costo di sviluppo</td>
+            <td>€4.200</td>
+            <td class="lc-col"><strong>€2.500</strong></td>
+          </tr>
+          <tr>
+            <td>Plugin obbligatori</td>
+            <td>€112/anno</td>
+            <td class="lc-col"><strong>€0</strong></td>
+          </tr>
+          <tr>
+            <td>Costo annuo ricorrente</td>
+            <td>€600–800</td>
+            <td class="lc-col"><strong>~€230</strong></td>
+          </tr>
+          <tr>
+            <td>Hosting</td>
+            <td>€20–30/mese</td>
+            <td class="lc-col"><strong>~€19/mese</strong></td>
+          </tr>
+          <tr>
+            <td>Sicurezza</td>
+            <td><span class="check-red">✕</span> WordPress = bersaglio n°1</td>
+            <td class="lc-col"><span class="check-green">✓</span> Superficie d'attacco minima</td>
+          </tr>
+          <tr>
+            <td>Velocità</td>
+            <td>Media (dipende dai plugin)</td>
+            <td class="lc-col"><span class="check-green">✓</span> Eccellente (SSG + CDN globale)</td>
+          </tr>
+          <tr>
+            <td>Proprietà del codice</td>
+            <td><span class="check-red">✕</span> Dipendente dall'agenzia</td>
+            <td class="lc-col"><span class="check-green">✓</span> Il codice è tuo</td>
+          </tr>
+          <tr>
+            <td>Supporto</td>
+            <td>Ticket (giorni)</td>
+            <td class="lc-col"><span class="check-green">✓</span> WhatsApp (ore)</td>
+          </tr>
+          <tr>
+            <td>Automazioni future</td>
+            <td><span class="check-red">✕</span> Plugin a pagamento</td>
+            <td class="lc-col"><span class="check-green">✓</span> API/webhook nativi già pronti</td>
+          </tr>
+          <tr>
+            <td>Integrazioni ERP/CRM</td>
+            <td><span class="check-red">✕</span> Plugin dipendenti, costi extra</td>
+            <td class="lc-col"><span class="check-green">✓</span> Connessione diretta, nessun lock-in</td>
+          </tr>
+          <tr>
+            <td><strong>Totale 3 anni</strong></td>
+            <td>~€8.000–11.000</td>
+            <td class="lc-col"><strong>~€3.190</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── MANUTENZIONE ── -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">14</span>
+      <h2>Manutenzione Post-Lancio (facoltativa)</h2>
+    </div>
+    <div class="maint-card">
+      <div class="maint-icon">🛠️</div>
+      <div>
+        <div class="maint-title">Disponibilità per interventi post-lancio</div>
+        <div class="maint-desc">Supporto continuativo disponibile dopo il go-live, con costi da concordare in base alle attività richieste.</div>
+        <div class="maint-items">
+          <span class="maint-tag">Aggiornamenti Next.js</span>
+          <span class="maint-tag">Modifiche e correzioni</span>
+          <span class="maint-tag">Supporto WhatsApp/email</span>
+          <span class="maint-tag">Nuovi prodotti e categorie</span>
+          <span class="maint-tag">Automazioni e integrazioni</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">
+    <img src="/Preventivi/Reset_Print/logo.svg" width="60" height="48" alt="LengoCorp logo" style="opacity:0.85;">
+    <span class="footer-brand">LengoCorp</span>
+  </div>
+  <div style="text-align:center;">
+    Preventivo redatto da <strong style="color:rgba(255,255,255,0.7);">Francesco Schino</strong> trading as LengoCorp<br>
+    <a href="mailto:france.schino@live.it">france.schino@live.it</a>
+  </div>
+  <div style="text-align:right;">
+    25 marzo 2026<br>
+    <span style="color:rgba(255,255,255,0.3); font-size:11px;">Documento riservato</span>
+  </div>
+</footer>
+
+</body>
+</html>

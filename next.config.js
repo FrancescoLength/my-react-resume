@@ -2,6 +2,14 @@
 
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/preventivo_Reset_Print',
+        destination: '/Preventivi/Reset_Print/index.html',
+      },
+    ];
+  },
   webpack: config => {
     const oneOfRule = config.module.rules.find(rule => rule.oneOf);
 
